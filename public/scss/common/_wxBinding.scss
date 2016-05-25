@@ -1,0 +1,213 @@
+@import 'variable';
+@import 'maxin';
+
+body{
+    background-color: #f7f7f7;
+}
+
+h1{
+        font-size: 16px;
+        background-color: $lblue;
+        color: #ffffff;
+        font-family: $ffa;
+        font-weight: bold;
+        padding: 12px 20px;
+        @include box-center(1060px);
+    }
+
+.binding_content{
+	overflow: hidden;
+    margin-bottom: 90px;
+    @include box-center(1100px);
+    background-color: #ffffff;
+    border: 1px solid $linegray;
+    border-top: none;   
+}
+
+.register_box{
+	float: left;
+	padding: 30px 0 0 100px;
+	font-family: $ffa;
+	h2{
+		color: $dgray;
+		font-size: 24px;
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+
+	p{
+		color: $lgray;
+		margin-bottom: 20px;
+	}
+
+	li{
+        margin-bottom: 20px;
+    }
+    
+    .rb_title{
+        display: inline-block;
+        width: 5em;
+        text-align: right;
+        color: $mgray;
+        margin-right: 5px;
+        em{
+            color: #db281f;
+        }
+    }
+    
+    .rb_text{
+        border:1px solid $linegray;
+        padding: 0 5px;
+        height: 28px;
+        line-height: 28px;
+        width: 218px;
+        vertical-align: middle;
+    }
+    
+    .rb_agreeline{
+        padding-left: 77px;
+        margin-bottom: 31px;
+        label{
+            color: $mgray;
+            
+            a{
+                color: $lblue;
+            }
+        }
+    }
+
+    .rb_phoneCodeLine{
+        .rb_text{
+            width: 97px;
+        }
+        a{
+            font-size: 12px;
+            color: $mgray;
+            display: inline-block;
+            height: 28px;
+            line-height: 28px;
+            width: 120px;
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid $linegray;
+            border-left: none;
+            background-color: #f7f7f7;
+        }
+    }
+    
+    .rb_btnline{
+        padding-left: 80px;
+        .btn{
+            width: 230px;
+        }
+    }
+}
+
+.binding_box{
+	float: right;
+	padding: 40px 15px 38px;
+	margin:60px 40px 55px 0;
+	border: 1px solid $linegray;
+	font-family: $ffa;
+	h2{
+		font-size: 20px;
+		margin-bottom: 20px;
+		color: $lgray;
+		text-align: center;
+	}
+	p{
+		font-size: 12px;
+		color: $lgray;
+	}
+	ol{
+		width: 180px;
+		margin: 0 auto;
+	}
+	li{
+        margin-bottom: 20px;
+    }
+    
+    .bb_title{
+        display: block;
+        font-family: $ffa;
+        color: $mgray;
+        margin-bottom: 5px;
+        em{
+            color: #db281f;
+        }
+    }
+    
+    .bb_text{
+        border:1px solid $linegray;
+        padding: 0 5px;
+        height: 28px;
+        line-height: 28px;
+        width: 168px;
+        vertical-align: middle;
+    }
+
+    .bb_btnline{
+		.btn_warning{
+			width: 110px;
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		a{
+			color: $lgray;
+		}
+    }
+}
+
+.rb_imageCodeBox{
+    width: 500px;
+    font-family: $ffa;
+    h2{
+        color: $lblue;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    
+    .rbi_inputline{
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    
+    label{
+        color: $mgray;
+    }
+    
+    input{
+        line-height: 28px;
+        border: 1px solid $linegray;
+        padding: 0 5px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    
+    img{
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+    
+    .rbi_btnline{
+        text-align: center;
+    }
+    
+    .btn{
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        display: inline-block;
+        
+    }
+}
+
+
+
+
+
+
+
+
+

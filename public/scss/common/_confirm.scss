@@ -1,0 +1,44 @@
+.register_box{
+    margin-bottom: 90px;
+    @include box-center(1100px);
+    h1{
+        font-size: 16px;
+        background-color: $lblue;
+        color: #ffffff;
+        font-family: $ffa;
+        font-weight: bold;
+        padding: 12px 20px;
+    }
+	.register_success_box{
+	    padding: 80px 0 60px 0;
+	    text-align: center;
+	    border: 1px solid $linegray;
+	    border-top: none;
+	    color: $mgray;
+	    h3{
+	        font-family: $ffa;
+	        font-weight: bold;
+	        font-size: 24px;
+	        color: $mgreen;
+	        margin-bottom: 20px;
+	        i{
+	            display: inline-block;
+	            margin-bottom: 20px;
+	            @include bIconSprite(8, 60px, 60px);
+	        }
+	    }
+	    
+	    .rsb_text{
+	        margin:83px 0 30px;
+	        padding-top: 29px;
+	        border-top: 1px dashed $linegray;
+	        font-size: 16px;
+	        font-family: $ffa;
+	    }
+	    .btn{
+	        display: inline-block;
+	        width: 9em;
+	        margin: 0 5px;
+	    }
+	}
+}

@@ -1,0 +1,176 @@
+@import 'variable';
+@import 'maxin';
+
+.provider_box{
+    margin-bottom: 40px;
+    h3{
+        padding: 10px 0 10px 16px;
+        border-left: 6px solid $lblue;
+        color: $lblue;
+        background-color: #eef2f6;
+        font-size: 16px;
+        font-family: $ffa;
+        font-weight: bold;
+        margin-bottom: 28px;
+    }
+    
+    h4{
+        font-family: $ffa;
+        color:$mgray;
+        margin-bottom: 20px;
+        font-weight: bold;
+        a{
+           color:$mgray; 
+        }
+    }
+    
+    .pb_options{
+        padding: 18px 25px 0;
+        border: 1px solid $linegray;
+        border-bottom: none;
+        p{
+            background-color: #eef2f6;
+            color: $lblue;
+            padding: 8px 10px;
+            font-weight: bold;
+        }
+        ul{
+            color: $mgray;
+            li{
+                padding: 18px 10px;
+                border-top: 1px dashed $linegray;
+                &:first-child{
+                    border-top: none;
+                }
+            }
+            
+            strong{
+                font-weight: bold;
+                margin-right: 20px;
+            }
+        }
+        label{
+            margin-right: 10px;
+        }
+    }
+    
+    .pb_queryprice_line{
+        padding: 14px 20px 13px;
+        background-color: #f7f7f7;
+        text-align: right;
+        border: 1px solid $linegray;
+        border-top: none;
+        margin-bottom: 40px;
+        .btn{
+            width: 100px;
+            display: inline-block;
+        }
+    }
+    
+    .pb_list{
+        li{
+           overflow: hidden;
+            margin-bottom: 30px;
+        }
+        h4{
+            font-size: 16px;
+            color: #313131;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid $linegray;
+        }
+        
+        .icon_acc, .icon_tax{
+            background-image: url('../img/smallIcon.png');
+            display: inline-block;
+            width: 18px;
+            height: 22px;
+            vertical-align: top;
+            margin-left: 9px;
+        }
+        
+        .icon_acc{
+            background-position: -90px -20px;
+        }
+        
+        .icon_tax{
+            background-position: -120px -20px;
+        }
+        
+        .pbl_photo{
+            float: left;
+            margin-right: 15px;
+            img{
+                border: 1px solid #dddddd;
+            }
+        }
+        
+        .pbl_content{
+            float: left;
+            width: 500px;
+            li{
+                font-size: 12px;
+                float:left;
+                margin-bottom: 12px;
+            }
+        }
+        
+        .pbl_line{
+            padding-top: 12px;
+            border-top: 1px dashed $linegray;
+            margin-bottom: 0!important;
+        }
+        
+        .pbl_col_3{
+            width: 33%;
+            color: $lgray;
+        }
+        
+        .pbl_col_12{
+            width: 100%;
+            line-height: 24px;
+            color: $mgray;
+            strong{
+                font-weight: bold;
+            }
+        }
+        
+        .pbl_money{
+            float: right;
+            padding: 43px 27px 0 0;
+            width: 140px;
+            text-align: center;
+            strong{
+                display: block;
+                color:#eb9000;
+                font-family: $ffa;
+                font-weight: bold;
+                font-size: 24px;
+                margin-bottom: 27px;
+            }
+            a{
+                display: block;
+            }
+        }
+    }
+    
+    .no_result_line{
+        text-align: center;
+        margin-bottom: 60px;
+        p{
+            margin-bottom: 30px;
+            color: $mgray;
+            font-family: $ffa;
+            font-size: 16px;
+        }
+        .icon{
+            @include bIconSprite(10, 61px, 58px);
+            display: inline-block;
+        }
+
+        .btn{
+            width: 140px;
+            display: inline-block;
+        }
+    }
+}

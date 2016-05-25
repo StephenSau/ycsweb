@@ -1,0 +1,381 @@
+@import 'variable';
+@import 'maxin';
+.order_progressbar {
+    @include box-center(1000px);
+    padding: 64px 0 73px;
+    position: relative;
+    z-index: 1;
+    li {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .op_step_01 {
+        left: 0;
+    }
+    .op_step_02 {
+        left: 25%;
+    }
+    .op_step_03 {
+        left: 50%;
+    }
+    .op_step_04 {
+        left: 75%;
+    }
+    .op_step_05 {
+        left: 100%;
+    }
+    
+    em{
+        color: $mgray;
+    }
+}
+
+.op_text .op_step_01 em{
+    color: #73a80d;
+}
+
+.op_container {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+
+.op_background li,
+.op_step_box li {
+    background-image: url('../img/bigIcon.png');
+}
+
+.op_background li {
+    background-position: -120px -320px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: -13px 0 0 -20px;
+}
+
+.op_background {
+    height: 14px;
+    background-color: #dddddd;
+}
+
+.op_bar {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 15;
+    height: 6px;
+    width: 0;
+    background-color: #73a80d;
+}
+
+.op_step_box li {
+    background-position: -160px -320px;
+    z-index: 20;
+    width: 30px;
+    height: 30px;
+    margin: -8px 0 0 -15px;
+    text-align: center;
+    line-height: 30px;
+    font-family: $ffn;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    &.op_step_01{
+        background-position: -190px -320px;
+    }
+}
+
+
+.op_text li {
+    top: 25px;
+    z-index: 30;
+}
+
+.op_text em,
+.op_text i {
+    display: block;
+    width: 7em;
+    text-align: center;
+    margin-left: -3.5em;
+}
+
+.op_text em {
+    font-family: $ffa;
+}
+
+.op_text i {
+    font-family: $ffn;
+    margin-top: 60px;
+}
+
+
+.order_commit_box{
+    display: none;
+    h2{
+        color: $lblue;
+        border-bottom: 4px solid $lblue;
+        padding-bottom: 10px;
+    }
+}
+
+.ocb_content{
+    border: 1px solid $linegray;
+    border-top: none;
+    padding: 30px;
+    font-family: $ffa;
+    h3{
+        margin-bottom: 20px;
+        color: $dgray;
+        font-weight: bold;
+    }
+}
+
+.ocb_contactor {
+    border-bottom: 1px dashed $linegray;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    li {
+        margin-bottom: 20px;
+    }
+    .ocb_title {
+        display: inline-block;
+        width: 8em;
+        text-align: right;
+        font-family: $ffa;
+        color: $mgray;
+        em {
+            color: #db281f;
+        }
+    }
+    .ocb_text {
+        border: 1px solid $linegray;
+        padding: 0 5px;
+        height: 28px;
+        line-height: 28px;
+        width: 238px;
+        vertical-align: middle;
+    }
+    textarea {
+        border: 1px solid $linegray;
+        padding: 5px 10px;
+        height: 36px;
+        width: 238px;
+        font-size: 14px;
+        color: $mgray;
+    }
+    .ocb_notitleline {
+        padding-left: 74px;
+    }
+    select {
+        height: 24px;
+    }
+    .ocb_province {
+        width: 140px;
+        margin-right: 5px;
+    }
+    .ocb_city {
+        width: 180px;
+        margin-right: 5px;
+    }
+    .ocb_district {
+        width: 140px;
+    }
+}
+
+.ocb_service {
+    font-size: 12px;
+    padding: 0 28px;
+    color: $mgray;
+    h3 {
+        color: $dgray;
+        font-family: $ffa;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+    h4 {
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    
+    dt{
+        float: left;
+        margin-bottom: 10px;
+    }
+    
+    dd{
+        margin-bottom: 20px;
+        dt{
+            margin-top: 6px;
+        }
+        dl{
+            padding-left: 1em;
+        }
+        dd{
+           padding-left: 5em;
+           line-height: 24px; 
+        }
+        
+    }
+    
+    textarea{
+        width: 545px;
+        height: 50px;
+        border: 1px solid $linegray;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: $mgray;
+    }
+    
+    .odi_nofloat {
+        float: none;
+    }
+    a {
+        color: $lblue;
+    }
+}
+
+
+.order_payline{
+    padding: 30px 20px 20px;
+    color: $lgray;
+    text-align: right;
+    p{
+        text-align: right;
+    }
+    .btn{
+        display: inline-block;
+        width: 130px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+       
+    em{
+        display: inline-block;
+        min-width: 125px;
+        font-family: $ffa;
+        font-size: 24px;
+        color: $mred;
+    }
+}
+
+.order_login_box{
+    display: none;
+    background-color: #fff;
+    padding: 20px 0 0 20px;
+    border: 1px solid $linegray;
+    border-top-width: 4px;
+    margin-bottom: 30px;
+    input{
+        vertical-align: middle;
+    }
+    
+    li{
+        margin-bottom: 20px;
+    }
+    
+    .lb_title{
+        width: 5em;
+        text-align: right;
+        font-family: $ffa;
+        font-size: 14px;
+        color: $mgray;
+        margin-right: 5px;
+        display: inline-block;
+        em{
+            color: $mred;
+        }
+    }
+    
+    .lb_text{
+        padding: 0 5px;
+        width: 208px;
+        height: 34px;
+        line-height: 34px;
+        border: 1px solid #dddddd;
+        &[disabled]{
+            background-color: #f7f7f7;
+        } 
+    }
+    
+    .lb_find{
+        color: $lgray;
+        font-size: 12px;
+    }
+
+    .lb_phoneCodeLine{
+        .lb_text{
+            width: 87px;
+        }
+        a{
+            font-size: 12px;
+            color: $mgray;
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            width: 120px;
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid $linegray;
+            border-left: none;
+            background-color: #f7f7f7;
+        }
+    }
+    
+    .lb_btnline{
+        margin-bottom: 20px;
+        padding-left: 5.8em;
+        button{
+            width: 220px;
+        }
+    }
+
+    .lb_imgCodeLine{
+        display: none;
+        .lb_text{
+            width: 100px;
+        }
+        img{
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    }
+    .lb_nameLine{
+        display: none;
+        >a{
+            font-size: 12px;
+            color: $lblue;
+            text-decoration: underline;
+        }
+    }
+
+    .lb_passwordLine{
+        display: none;
+    }
+
+    .lb_telphoneLine{
+        >span{
+            display: inline-block;
+            width: 8em;
+            font-size: 12px;
+            color: $lgray;
+            vertical-align: middle;
+            a{
+                color: $lblue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.lb_getPhone_disabled{
+    cursor: default;
+}
+
+.olb_disabled{
+    background-color: #f7f7f7;
+}

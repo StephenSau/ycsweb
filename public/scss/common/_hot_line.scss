@@ -1,0 +1,47 @@
+@import "variable";
+@import "maxin";
+
+.hot_line_box{
+    background:url('../img/bg_01.png') 0 100% no-repeat;
+    width: 210px;
+    height: 77px;
+    padding-top: 31px;
+    margin-bottom: 30px;
+    
+    h3{
+        font-family: $ffa;
+        font-size: $xlfs;
+        color: #f9df00;
+        text-align: center;
+        margin-bottom: 11px;
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            @include sIconSprite(3);
+            margin-right: 6px;
+        }
+    }
+    
+    p{
+        color: #f9df00;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: $ffn;
+        text-align: center;
+    }
+}
+
+.hot_line_intro{
+    color: $lgray;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid $linegray;
+    border-top: none;
+    background: #f7f7f7;
+    margin: -30px 0 30px;
+}
+
+.hlb_special{
+    height: 79px;
+}

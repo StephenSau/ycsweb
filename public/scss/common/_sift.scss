@@ -1,0 +1,80 @@
+@import 'variable';
+@import 'maxin';
+
+.sift_box{
+    float: left;
+    width: 275px;
+    border: 1px solid $linegray;
+    border-left: 4px solid $linegray;
+    height: 338px;
+    h2{
+        border-left: 4px solid $lblue;
+        background-color: #eef2f6;
+        height: 36px;
+        line-height: 36px;
+        padding-left: 20px;
+        color: $lblue;
+        font-family: $ffa;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: -4px;
+    }
+    
+    p{
+        height: 70px;
+        padding-top: 30px;
+        margin: 0 22px 0 17px;
+        border-bottom: 1px dashed $linegray;
+        color: $linegray;
+        &.last_child{
+            border-bottom: none;
+        }
+    }
+    
+    a{
+        display: inline-block;
+        width: 110px;
+        margin-bottom: 20px;
+        font-family: $ffa;
+        color: $dgray;
+        &:hover{
+            color: $lblue;
+        }
+    }
+}
+
+
+.sift_line{
+    margin-bottom: 20px;
+    dt{
+        font-size: 16px;
+        font-family: $ffa;
+        color: #1153a7;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #1153a7;
+    }
+    
+    dd{
+        border: 1px solid $linegray;
+        border-top: none;
+        padding: 27px 0 19px 49px;
+        a{
+            color: $mgray;
+            display: inline-block;
+            margin: 0 9px 10px 0;
+            &:hover{
+                color: $lblue;
+            }
+            &.selected{
+                color: $mred;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+*+html .sift_box a{
+    vertical-align: bottom;
+    padding-bottom: 1px;
+    margin-bottom: 15px;
+}

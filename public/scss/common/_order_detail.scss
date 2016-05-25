@@ -1,0 +1,807 @@
+@import 'variable';
+@import 'maxin';
+
+
+.order_progressbar{
+    @include box-center(1000px);
+    padding: 64px 0 73px;
+    position: relative;
+    z-index: 1;
+    li{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .op_step_01{
+        left: 0;
+    }
+    
+    .op_step_02{
+        left: 25%;
+    }
+    
+    .op_step_03{
+        left: 50%;
+    }
+    
+    .op_step_04{
+        left: 75%;
+    }
+    
+    .op_step_05{
+        left: 100%;
+    }
+}
+
+.op_container{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+
+.op_background li, .op_step_box li{
+    background-image: url('../img/bigIcon.png');
+}
+
+.op_background li{
+    background-position: -120px -320px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: -13px 0 0 -20px;
+}
+
+.op_background{
+    height: 14px;
+    background-color: #dddddd;
+}
+
+.op_bar{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 15;
+    height: 6px;
+    width: 0;
+    background-color: #73a80d;
+}
+
+.op_step_box li{
+    background-position: -160px -320px;
+    z-index: 20;
+    width: 30px;
+    height: 30px;
+    margin: -8px 0 0 -15px;
+    text-align: center;
+    line-height: 30px;
+    font-family: $ffn;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.op_text li{
+    top: 25px;
+    z-index: 30;
+}
+
+
+.op_text em, .op_text i{
+    display: block;
+    width: 7em;
+    text-align: center;
+    margin-left: -3.5em;
+}
+
+
+.op_text em{
+    font-family: $ffa;
+    color: $mgray;
+}
+
+
+.op_text i{
+    font-family: $ffn;
+    margin-top: 60px;
+}
+
+.op_unpay{
+    .op_text{
+        .op_step_01,.op_step_02{
+            em{
+                color: #73a80d;
+            }  
+        }
+    }
+    
+    .op_bar{
+        width: 50%;
+    }
+    
+    .op_step_box{
+        .op_step_01, .op_step_02{
+            background-position: -190px -320px;
+        }
+    }
+}
+
+
+.op_unconfirm{
+    .op_text{
+        .op_step_01 em{
+            color: #73a80d;
+        }
+    }
+    
+    .op_bar{
+        width: 25%;
+    }
+    
+    .op_step_box{
+        .op_step_01{
+            background-position: -190px -320px;
+        }
+    }
+}
+
+.op_servering{
+    .op_text{
+        .op_step_01,.op_step_02,.op_step_03,.op_step_04{
+            em{
+                color: #73a80d;
+            }  
+        }
+    }
+    
+    .op_bar{
+        width: 75%;
+    }
+    
+    .op_step_box{
+        .op_step_01, .op_step_02, .op_step_03, .op_step_04{
+            background-position: -190px -320px;
+        }
+    }
+}
+
+.op_payed_confirmed{
+    .op_text{
+        .op_step_01,.op_step_02,.op_step_03{
+            em{
+                color: #73a80d;
+            }  
+        }
+    }
+    
+    .op_bar{
+        width: 75%;
+    }
+    
+    .op_step_box{
+        .op_step_01, .op_step_02, .op_step_03{
+            background-position: -190px -320px;
+        }
+    }
+}
+
+.op_payed_unconfirm{
+    .op_text{
+        .op_step_01,.op_step_02,.op_step_03{
+            em{
+                color: #73a80d;
+            }  
+        }
+    }
+    
+    .op_bar{
+        width: 50%;
+    }
+    
+    .op_step_box{
+        .op_step_01, .op_step_02, .op_step_03{
+            background-position: -190px -320px;
+        }
+    }
+}
+
+
+.op_cancel{
+    .op_bar{
+        width: 0;
+    }
+}
+
+.op_finished{
+    .op_text{
+        li{
+            em{
+               color: #73a80d; 
+            }
+        }
+    }
+    
+    .op_bar{
+        width: 100%;
+    }
+    
+    .op_step_box{
+        li{
+            background-position: -190px -320px;
+        }
+    }
+}
+
+.op_breakoff{
+    .op_text{
+        .op_step_05{
+            em{
+                color: $mred;
+            }
+        }
+    }
+    .op_bar{
+        width: 0;
+    }
+    .op_step_box{
+        .op_step_05{
+            background-position: -220px -320px;
+        }
+    }
+}
+
+
+.order_status{
+    border: 1px solid $linegray;
+    margin-bottom: 30px;
+    .os_done{
+        color: $mgreen;
+    }
+    .os_warning{
+        color: $mred;
+    }
+}
+
+
+.os_overview{
+    padding: 24px 28px 22px;
+    font-size: 16px;
+    font-family: $ffa;
+    font-weight: bold;
+    color: $dgray;
+    span{
+        margin-right: 10px;
+    }
+    em{
+        color: $morange;
+    }
+}
+
+.os_btnline{
+    padding: 0 28px 27px;
+    a{
+        margin-right: 10px;
+        color: $lblue;
+    }
+    .btn{
+        display: inline-block;
+        color: #ffffff;
+        width: 6em;
+        font-size: 16px;
+    }
+}
+
+
+.order_service{
+    padding: 30px 0;
+    display: none;
+    margin: 0 28px;
+    border-top: 1px solid $linegray;
+    h3{
+        font-family: $ffa;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: $dgray;
+    }
+    h4{
+        font-family: $ffa;
+        margin-bottom: 14px;
+        color: $mgray;
+        margin-bottom: 20px;
+    }
+    
+    ol{
+        overflow: hidden;  
+        i.icon{
+            float:left;
+            font-family: $ffn;
+            margin-right: 10px;
+            font-size: 24px;
+            color: #eb9000;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            @include bIconSprite(5, 50px, 50px);
+        }
+        b.icon{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: none;
+            @include sIconSprite(16, 34px, 34px);
+            
+        }
+    }
+    
+    li{
+        float:left;
+        position: relative;
+        margin: 0 25px 10px 20px;
+        &.active{
+            i.icon{
+                background-position: -500px 0;
+                color: #73a80d;
+            }
+            b.icon{
+                display: block;
+            }
+            >div{
+                border: 2px solid #73a80d;
+                width: 226px;
+                
+            }
+        }
+        >div{
+            border-bottom: 4px solid #eb9000;
+            height: 96px;
+            width: 230px;
+            margin-bottom: 14px;
+            background-color: #f7f7f7;
+            >p{
+                overflow: hidden;
+                padding: 25px 18px 0 15px;
+                font-size: 12px;
+                font-family: $ffa;
+                color: $mgray;
+                line-height: 18px;
+            }
+        }
+        >p{
+            color: $lgray;
+            display: none;
+            font-size: 12px;
+            text-align: right;
+            margin-top: -14px;
+            height: 14px;
+            line-height: 14px;
+        }
+        &:hover{
+            >p{
+                display: block;
+            }
+        }
+        
+
+    }
+}
+
+*+html .order_service ol{
+    padding-bottom: 10px;
+}
+
+*+html .order_service li>p{
+    text-indent: 115px;
+}
+
+.os_remark{
+    display: none;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+    text-align: center;
+    height: 88px;
+    width: 1198px;
+    font-size: 16px;
+    font-family: $ffa;
+    color: $mgray;
+    line-height: 30px;
+    a{
+        color: #eb9000;
+    }
+    span{
+        color: #73a80d;
+    }
+}
+
+
+*+html .os_remark{
+    padding: 10px 0;
+    height: auto;
+}
+
+
+.order_detail{
+    h2{
+        padding-bottom: 9px;
+        font-size: 16px;
+        font-family: $ffa;
+        color: $lblue;
+        border-bottom: 4px solid $lblue;
+    }
+    
+}
+
+.od_box{
+    border: 1px solid $linegray;
+    border-top: none;
+    margin-bottom: 30px;
+}
+
+
+.od_info{
+    font-size: 12px;
+    padding: 0 28px;
+    color: $mgray;
+    h3{
+        color: $dgray;
+        font-family: $ffa;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+    
+    h4{
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    >li{
+        border-top: 1px dashed $linegray;
+        padding: 29px 0;
+        &:first-child{
+            border-top: none;
+        }
+        ol{
+            dl{
+                padding-left: 1.25em;
+            }
+            dt{
+                margin-top: 5px;
+            }
+            dd{
+                padding-left: 5em;
+                line-height: 24px;
+            }
+        }
+        
+        a{
+            color: $lblue;
+        }
+        
+        dt{
+            float: left;
+            width: 5em;
+             margin-bottom: 10px;
+        }
+        dd{
+            margin-bottom: 10px;
+        }
+        .odi_nofloat{
+            float: none;
+        } 
+    }
+    
+    .icon_acc, .icon_tax{
+        background-image: url('../img/smallIcon.png');
+        display: inline-block;
+        width: 18px;
+        height: 22px;
+        vertical-align: top;
+        margin-top: -5px;
+        margin-left: 9px;
+    }
+
+    .icon_acc{
+        background-position: -90px -20px;
+    }
+
+    .icon_tax{
+        background-position: -120px -20px;
+    }
+}
+
+
+.od_paytype{
+    display: none;
+    padding: 30px 0 0 0;
+    margin: 0 28px;
+    border-top: 1px dashed $linegray;
+    h3{
+        font-family: $ffa;
+        color: $dgray;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .opt_remark{
+        display: none;
+        color: $mred;
+        line-height: 18px;
+        font-weight: bold;
+    }
+    p.active{
+        display: block;
+    }
+    a{
+        display: inline-block;
+        position: relative;
+        width: 98px;
+        height: 28px;
+        border: 1px solid $linegray;
+        line-height: 28px;
+        text-align: center;
+        color: $mgray;
+        margin-right: 15px;
+        
+        &.active{
+            color: $mred;
+            border: 2px solid $mred;
+            widows: 96px;
+            height: 26px;
+            line-height: 26px;
+            i.icon{
+                display: block;
+            }
+        }
+        i.icon{
+            display: block;
+            @include sIconSprite(17, 16px, 16px);
+            bottom: 0;
+            right: 0;
+            display: none;
+            position: absolute;
+        }
+    }
+}
+
+
+.order_payline{
+    display: none;
+    padding: 0 20px;
+    color: $lgray;
+    div.active{
+        display: block;
+    }
+    p{
+        &.active{
+            display: block;
+        }
+        text-align: right;
+    }
+    .btn{
+        display: inline-block;
+    }
+    
+    .opl_paidLine{
+        display: none;
+    }
+    
+    .opl_bankpay{
+        display: none;
+        line-height: 60px;
+        .btn{
+            width: 200px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 16px;
+        }
+    }
+    
+    .opl_alipay, .opl_wxpay{
+        display: none;
+        line-height: 48px;
+        p:first-child{
+            border-bottom: 1px dashed $linegray;
+        }
+        .btn{
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+    
+    b{
+        font-family: 18px;
+        font-family: $ffa;
+        color: $mgray;
+        display: inline-block;
+        width: 125px;
+    }
+    
+    em{
+        display: inline-block;
+        min-width: 125px;
+        font-family: $ffa;
+        font-size: 24px;
+        color: $mred;
+    }
+}
+
+
+
+
+.order_weboff{
+    display: none;
+    font-family: $ffa;
+    h3{
+        padding-bottom: 9px;
+        font-size: 16px;
+        color: $lblue;
+        border-bottom: 4px solid $lblue;
+    }
+    
+    .owo_box{
+        border: 1px solid $linegray;
+        border-top: none;
+        padding: 23px 28px 29px;
+    }
+    
+    .owo_moneyline{
+        color: $mred;
+        font-weight: bold;
+        padding-bottom: 22px;
+        margin-bottom: 30px;
+        border-bottom: 1px dashed $linegray;
+        em{
+            font-size: 24px;
+        }
+    }
+    
+    .owo_code{
+        
+        color: $dgray;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        em{
+            color: $mred;
+        }
+    }
+    
+    ol{
+        padding-left: 30px;
+        line-height: 24px;
+        color: $mgray;
+        margin-bottom: 30px;
+    }
+    
+    .owo_remark{
+        color: $lgray;
+        margin-bottom: 20px;
+        color: $mgray;
+        
+    }
+    
+    table{
+        width: 1100px;
+        border: 1px solid $linegray;
+        margin: 0 20px 30px;
+        color: $mgray;
+        th,td{
+            text-align: center;
+        }
+
+        th{
+            padding: 8px 0 9px;
+            color: $lblue;
+            background-color: #eef2f6;
+        }
+        tr td:first-child{
+            border-left: none;
+            text-align: left;
+            padding-left: 18px;
+        }
+        td{
+            padding: 25px 0;
+            border-top: 1px solid #eef2f6;
+            border-left: 1px solid #eef2f6;
+            vertical-align: middle;
+            line-height: 18px;
+        }
+        
+        i{
+            background-image: url('../img/bankLogo.png');
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
+        .owo_bank_01{
+            background-position: 0 0;
+        }
+        
+        .owo_bank_02{
+            background-position: -30px 0;
+        }
+        
+        .owo_bank_03{
+            background-position: -60px 0;
+        }
+        
+        .owo_bank_04{
+            background-position: -90px 0;
+        }
+        
+        .owo_bank_05{
+            background-position: -120px 0;
+        }
+    }
+}
+
+
+.order_wx{
+    display: none;
+    font-family: $ffa;
+    h3{
+        padding-bottom: 9px;
+        font-size: 16px;
+        color: $lblue;
+        border-bottom: 4px solid $lblue;
+    }
+    .owx_box{
+        border: 1px solid $linegray;
+        border-top: none;
+        padding: 23px 28px 29px;
+    }
+    .owx_moneyline{
+        color: $mred;
+        font-weight: bold;
+        padding-bottom: 22px;
+        margin-bottom: 30px;
+        border-bottom: 1px dashed $linegray;
+        em{
+            font-size: 24px;
+        }
+    }
+    h4{
+        font-size: 18px;
+        color: $mgray;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .owx_remark{
+        font-size: 12px;
+        color: $mgray;
+        margin-bottom: 50px;
+    }
+    .owx_photo_line{
+        text-align:center;
+        img{
+            display: block;
+            margin: 0 auto;
+            &:first-child{
+                margin-bottom: 25px;
+            }
+        }
+        margin-bottom: 60px;
+    }
+}
+
+.oww_alipay, .oww_changePay{
+    border-top: 1px dashed $linegray;
+    padding-top: 20px;
+    .btn{
+        display: inline-block;
+        margin-left: 20px;
+        box-shadow: none;
+        border: 1px solid $linegray;
+        width: 120px;
+        height: 30px;
+    }
+}

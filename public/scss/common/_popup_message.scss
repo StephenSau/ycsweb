@@ -1,0 +1,120 @@
+@import 'variable';
+@import 'maxin';
+
+
+.message_box{
+    font-family: $ffa;
+    width: 535px;
+    padding: 0 38px;
+    h3{
+        color: $lblue;
+        font-size: 18px;
+    }
+    
+    p{
+        color: $mgray;
+        margin-top: 22px;
+        line-height: 18px;
+        em{
+            color: $mred;
+        }
+    }
+    
+    .mb_text{
+        width: 280px;
+        border: 1px solid $linegray;
+        height: 30px;
+        padding: 0 5px;
+    }
+    
+    
+    .mb_btnline{
+        text-align: center;
+        .btn{
+            font-size: 16px;
+            display: inline-block;
+            width: 120px;
+            margin: 0 15px;
+        }
+    }
+    
+    .mb_optline{
+        select{
+            width: 280px;
+            height: 24px;
+        }
+        .btn{
+            font-size: 16px;
+            display: inline-block;
+            width: 100px;
+            margin: 0 10px;
+        }
+    }
+    
+    .mb_wxpay_line{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed $linegray;
+        .icon{
+            display: inline-block;
+            vertical-align: middle;
+            @include sIconSprite(24, 28px, 28px);
+            margin-right: 10px;
+        }
+    }
+    
+}
+
+
+.cancel_box{
+    position: relative;
+    padding-bottom: 100px;
+    .consult_line{
+        padding: 20px 30px 0;
+        bottom: 0;
+        left: -30px;
+        text-indent: 38px;
+        border-top: 1px dashed $linegray;
+        position: absolute;
+        width: 100%;
+        .btn{
+            font-size: 16px;
+            display: inline-block;
+            width: 210px;
+            margin: 0 10px;
+            text-indent: 0;
+        }
+    }
+}
+
+.dial_box{
+    width: 560px;
+    padding: 0 20px;
+    input{
+        vertical-align: middle;
+        line-height: 30px;
+    }
+    .btn{
+        width: 130px!important;
+    }
+    input.valid{
+        border-color: #73A80D;
+    }
+    input.invalid{
+        border-color: #db281f;
+    }
+}
+
+.onCall_box{
+    font-size: 24px;
+    padding: 35px 70px;
+    color: $mgreen;
+    font-family: $ffa;
+    .icon{
+        display: inline-block;
+        vertical-align: middle;
+        @include bIconSprite(14, 37px, 37px);
+    }
+}

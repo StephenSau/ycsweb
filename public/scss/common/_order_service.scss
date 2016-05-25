@@ -1,0 +1,92 @@
+@import 'variable';
+@import 'maxin';
+
+
+.order_service_box{
+    p{
+        font-size: 18px;
+        color: $lblue;
+        font-weight: bold;
+        font-family: $ffa;
+        padding-bottom: 20px;
+        border-bottom: 4px solid $lblue;
+    }
+    
+    ol{
+        padding: 18px 25px 0 23px;
+        border:1px solid $linegray;
+        overflow: hidden;
+    }
+    
+    li{
+        float:left;
+        margin-right: 20px;
+        padding-bottom: 18px;
+        input{
+            float: left;
+        }
+    }
+    
+    label{
+        font-family: $ffa;
+        color: $mgray;
+        margin-right: 5px;
+    }
+    
+    select{
+        height: 24px;
+    }
+    
+    .osb_mainclass{
+        width: 100px;
+        margin-right: 10px;
+    }
+    
+    .osb_subclass{
+        width: 130px;
+    }
+    
+    .osb_province{
+        width: 82px;
+        margin-right: 10px;
+    }
+    
+    .osb_city{
+        width: 82px;
+    }
+    
+    .osb_textarealine{
+        width: 100%;
+        border-top: 1px dashed $linegray;
+        padding-top: 19px;
+        textarea{
+            border: none;
+            width: 96%;
+            padding: 5px 1%;
+            height: 77px;
+            line-height: 24px;
+            border: 1px solid transparent;
+            color: $mgray;
+            font-size: 14px;
+        }
+    }
+    
+    
+    .osb_btnline{
+        text-align: right;
+        width: 100%;
+        .btn{
+            display: inline-block;
+            width: 140px;
+        }
+    }
+    
+    .osb_name{
+        @include text(100px);
+    }
+    
+    .osb_phone{
+        @include text(150px);
+        
+    }
+}

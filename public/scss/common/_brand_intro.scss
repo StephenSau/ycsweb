@@ -1,0 +1,63 @@
+@import 'variable';
+@import 'maxin';
+
+
+$bIconList: (1: 0 0,
+        2: -60px 0, 
+        3: -120px 0,
+        4: -180px 0);
+
+$titleColor: (1: #d1370d, 2: #1153a7, 3: #629500, 4: #eb9000);
+
+.brand_intro_box{
+    overflow: hidden;
+    padding: 36px 0 38px;
+    li{
+        float: left;
+        width: 115px;
+        position: relative;
+        padding: 0 28px 0 96px;
+        border-right: 1px solid #f7f7f7;
+    }
+    
+    .no_line{
+        border-right: none;
+    }
+    
+    .icon{
+        width: 54px;
+        height: 54px;
+        display: block;
+        position: absolute;
+        background-image: $bIocnUrl;
+        left: 22px;
+        top: 9px;
+    }
+    
+    h3{
+        font-family: $ffa;
+        margin-bottom: 6px;
+    }
+    
+    p{
+        line-height: 18px;
+        font-size: $sfs;
+        color: $lgray;
+        letter-spacing: -1px;
+    }
+    
+    @each $index, $color in $titleColor{
+        .bib_title_0#{$index} {
+            color:  #{$color};  
+        }
+    }
+    
+     @each $index, $position in $bIconList{
+        .bib_title_0#{$index} {
+            .icon{
+                background-position: #{$position};
+            }  
+        }
+    }
+    
+}

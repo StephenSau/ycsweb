@@ -1,0 +1,24 @@
+@import 'variable';
+@import 'maxin';
+
+
+.partner_box{
+    overflow: hidden;
+    h3{
+        @include title;
+    }
+    
+    ul{
+        width: 1250px;
+        overflow: hidden;
+    }
+    
+    li{
+        float: left;
+        margin-right: 32px;
+        margin-bottom: 20px;
+        img{
+            border: 1px solid $linegray;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import 'variable';
+@import 'maxin';
+
+.topic_link_box{
+    margin-bottom: 30px;
+    h3{
+        font-family: $ffa;
+        font-size: 16px;
+        color: $lblue;
+        margin-bottom: 10px;
+    }
+    
+    a{
+        color: #ffffff;
+        display: block;
+        &:hover{
+            span{
+                background-color: #000000;
+            }
+        }
+
+        img{
+            margin: 0;
+            border:none;
+        }
+
+        span{
+            display: block;
+            width: 100%;
+            height: 25px;
+            text-indent: .5em;
+            @include ellipsis;
+            line-height: 25px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #000000;
+            background-color: rgba(0, 0, 0, .5);
+            margin-top: -27px;
+            position: relative;
+
+        }
+    }
+}

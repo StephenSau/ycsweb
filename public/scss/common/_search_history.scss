@@ -1,0 +1,33 @@
+@import 'variable';
+@import 'maxin';
+
+
+
+.search_history{
+    margin-bottom: 30px;
+    display: none;
+    h3{
+        font-size: 16px;
+        font-family: $ffa;
+        color: #1153a7;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #1153a7;
+    }
+    
+    p{
+        border: 1px solid $linegray;
+        padding: 20px 5px 0;
+        overflow: hidden;
+        a{
+            padding: 3px 8px;
+            background-color: #f7f7f7;
+            color: $mgray;
+            float: left;
+            margin: 0 0 17px 10px;
+        }
+    }
+}
+
+*+html .search_history p{
+    padding-bottom: 17px;
+}

@@ -1,0 +1,49 @@
+@import 'variable';
+@import 'maxin';
+
+.tranc_condition_box{
+    h3{
+        padding: 10px 0 10px 16px;
+        border-left: 6px solid $lblue;
+        color: $lblue;
+        background-color: #eef2f6;
+        font-size: 16px;
+        font-family: $ffa;
+        font-weight: bold;
+        margin-bottom: 28px;
+    }
+    
+    ol{
+        li{
+            border-bottom: 1px dashed #dddddd;
+            font-family: $ffa;
+            line-height: 24px;
+            color: $mgray;
+            padding: 22px 0;
+            padding-left: 75px;
+            position: relative;
+            
+        }
+        
+        .tcb_lastline{
+            border-bottom: none;
+        }
+        
+        .icon{
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            left: 0;
+            display:block;
+            font-family: $ffn;
+            margin-right: 10px;
+            font-size: 24px;
+            color: #eb9000;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            color: #73a80d;
+            @include bIconSprite(6, 50px, 50px);
+        }
+    }
+}

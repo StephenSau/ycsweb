@@ -1,0 +1,35 @@
+@import 'variable';
+@import 'maxin';
+
+.flux_box{
+	margin-bottom: 30px;
+	border: 1px solid $linegray;
+	border-top-width: 4px;
+	padding: 11px 23px;
+	line-height: 2em;
+	color: $mgray;
+	>p{
+		padding-bottom: 11px;
+	}
+	>div{
+		padding: 11px 0;
+		font-size: 12px;
+		border-top: 1px dashed $linegray;
+		overflow: hidden;
+		>h4{
+			float: left;
+		}
+		>p{
+			font: left;
+			overflow: hidden;
+			a{
+				color: $lgray;
+				display: inline-block;
+				margin-left: 10px;
+				&:hover{
+					color: $lblue;
+				}
+			}
+		}
+	}
+}

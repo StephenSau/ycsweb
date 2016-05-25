@@ -1,0 +1,73 @@
+@import 'variable';
+@import 'maxin';
+
+
+.chronicle_box{
+    width: 970px;
+    
+    color: $mgray;
+    
+    
+    ul{
+       padding: 16px 5px 0 5px; 
+    }
+    
+    li{
+        border-left: 4px solid $linegray;
+        padding-bottom: 40px;
+        padding: 0 0 40px 15px;
+        position: relative;
+        &:first-child{
+            border-style: dashed;
+            .icon{
+                background-position: -300px 0;
+            }
+            
+        }
+        &:last-child{
+            border-color: transparent;
+        }
+        &.last-child{
+            border-color: transparent;
+        }
+    }
+    
+    
+    
+    div{
+        position: relative;
+        top: -11px;
+        zoom: 1;
+        
+    }
+    
+    .icon{
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: -24px;
+        @include sIconSprite(23, 14px, 14px); 
+    }
+    
+    
+    
+    h1,h3{
+        font-family: $ffa;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: $lorange;
+        
+    }
+    
+    h1{
+        color: $lblue;
+    }
+    
+    p{
+        line-height: 24px;
+    }
+    
+}
+
+

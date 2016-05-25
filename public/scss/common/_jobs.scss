@@ -1,0 +1,37 @@
+@import 'variable';
+@import 'maxin';
+
+
+.jobs_box{
+    width: 960px;
+    font-family: $ffa;
+    h1{
+        @include title(0, $lblue);
+    }
+    
+    ul{
+        border: 1px solid $linegray;
+        border-top: none;
+        padding: 0 8px;
+    }
+    
+    li{
+        padding: 30px 0;
+        font-size: 20px;
+        text-indent: 10px;
+        color: $lblue;
+        border-top: 1px dashed $linegray;
+        &:first-child{
+            border-top:none;
+        }
+    }
+    a{
+        font-size: 16px;
+        color: $lblue;
+        margin-left: 10px;
+        &:hover{
+            color: $lblue;
+        }
+    }
+    
+}

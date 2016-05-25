@@ -1,0 +1,102 @@
+@import 'variable';
+@import 'maxin';
+
+
+$bIconList_02: (1: 0 -80px,
+        2: -80px -80px, 
+        3: -160px -80px,
+        4: -240px -80px,
+        5: -320px -80px, 
+        6: -400px -80px,
+        7: 0 -160px,
+        8: -80px -160px, 
+        9: -160px -160px,
+        10: 0 -240px,
+        11: -80px -240px, 
+        12: -160px -240px);
+
+.aside{
+    background-color: #ffffff;
+}
+
+.service_intro_box{
+    padding-bottom: 15px;
+    h3{
+        @include title;
+    }
+    
+    .sib_shortcut_link{
+        margin: -50px 0 36px;
+        text-align: right;
+        color: $lblue;
+        a{
+            color: $lblue;
+            font-size: $sfs;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            } 
+        }
+        
+    }
+    
+    .sib_inner{
+        zoom: 1;
+        overflow: hidden;
+    }
+    
+    ul{
+        width: 1050px;
+    }
+    
+    li{
+        float: left;
+        position: relative;
+        z-index: 1;
+        padding:  0 64px 0 90px;
+        border-right: 2px solid #f7f7f7;
+        margin: 0 48px 30px 0;
+        height: 70px;
+        p{
+            width: 12em;
+            color: $lgray;
+            line-height: 17px;
+            font-size: $sfs;
+            font-family: $ffa;
+        }
+    }
+    
+    h4{
+        font-family: $ffa;
+        font-size: $lfs;
+        margin-bottom: 30px;
+        color: $mgray;
+    }
+    
+    h5{
+        font-weight: bold;
+        font-family: $ffa;
+        color: $mgray;
+        margin-bottom: 13px;
+        a{
+            color: $mgray;
+            &:hover{
+                color: $lblue;
+            }
+        }
+    }
+    
+    img{
+        width: 70px;
+        height: 70px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+}
+
+*+html .service_intro_box ul{
+    padding-bottom: 30px;
+}

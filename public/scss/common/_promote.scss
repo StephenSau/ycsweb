@@ -1,0 +1,52 @@
+@import 'variable';
+@import 'maxin';
+
+.promote_box{
+    overflow: hidden;
+    li{
+        float: left;
+        width: 287px;
+        padding: 12px 11px;
+        background-color: #f7f7f7;
+        margin-left: 14px;
+        display: inline;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    img{
+        border: 1px solid $linegray;
+        margin-bottom: 5px;
+    }
+    
+    h3{
+        text-align: right;
+        margin-bottom: 9px;
+        font-size: 16px;
+        font-family: $ffa;
+        color: $lblue
+    }
+    p{
+        color: $lgray;
+        line-height: 20px;
+    }
+
+    .pb_title a{
+        display: block;
+        font-size: 14px;
+        width: 100%;
+        font-family: $ffa;
+        font-weight: bold;
+        color: $dgray;
+        @include ellipsis;
+        &:hover{
+            color: $lblue;
+        }
+    }
+    
+    .pb_content{
+        height: 40px;
+        font-size: 12px;
+        overflow: hidden;
+    }
+}

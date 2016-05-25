@@ -1,0 +1,35 @@
+@import 'variable';
+@import 'maxin';
+
+.footer{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 12px;
+    color: #959595;
+    
+    a{
+        text-decoration: none;
+        color: #959595;
+        &:hover{
+            color: $lblue;
+        }
+    }
+    img{
+        margin: 0 12px;
+    }
+    
+    .f_readme, .f_map{
+        margin-bottom: 20px;
+        
+    }
+    .f_safe{
+        margin-bottom: 27px;
+    }
+    
+    .f_copyright{
+        background-color: $lblue;
+        color: #ffffff;
+        padding: 5px 0;
+    }
+}

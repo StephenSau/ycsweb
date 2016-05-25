@@ -1,0 +1,169 @@
+@import 'variable';
+@import 'maxin';
+
+
+.news_shareline{
+    text-align: right;
+    color: $mgray;
+    margin: -56px 0 33px;
+}
+
+.news_detail_box{
+    padding-bottom: 56px;
+    h1{
+        line-height: 40px;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: $ffa;
+        color: $lblue;
+        margin-bottom: 14px;
+    }
+    
+    p{
+        line-height: 24px;
+        color: $dgray;
+        margin-bottom: 24px;
+    }
+    
+    .ndb_info{
+        color: $lgray;
+        font-size: 12px;
+        margin-bottom: 5px;
+        span{
+            margin-right: 10px;
+        }
+    }
+    
+    .ndb_tags{
+        margin-bottom: 20px;
+        
+        a{
+           font-size: 12px;
+            color: $lblue;
+            margin-right: 15px;
+            background-color: #f7f7f7;
+            padding: 5px;
+        }
+    }
+    
+    .ndb_summary{
+        padding: 20px;
+        background-color: #f7f7f7;
+        color: $mgray;
+        margin-bottom: 30px;
+    }
+    
+    .ndb_figure{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    
+    .ndb_text{
+        strong{
+            font-weight: bold;
+        }
+        b{
+            font-weight: bold;
+        }
+        img{
+            max-width: 960px;
+        }
+        em{
+            font-style: italic;
+        }
+        i{
+            font-style: italic;
+        }
+        a{
+            color: $lblue;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+.relate_link{
+    margin-bottom: 28px;
+    h3{
+        font-size: 16px;
+        font-family: $ffa;
+        color: $lblue;
+        padding-bottom: 10px;
+        margin-bttom: 10px;
+        border-bottom: 4px solid #e9eee0;
+    }
+    
+    li{
+        line-height: 34px;
+    }
+    
+    a{
+        color: $dgray;
+        &:hover{
+            color: $lblue;
+        }
+    }
+    
+    .icon{
+        display: inline-block;
+        margin: 0 -4px 0 -7px;
+        @include sIconSprite(8, 20px, 14px);
+    }
+}
+
+.relate_service{
+    margin-bottom: 28px;
+    h3{
+        font-size: 16px;
+        font-family: $ffa;
+        color: $lblue;
+        padding-bottom: 10px;
+        margin-bttom: 10px;
+        border-bottom: 4px solid $linegray;
+        span{
+            font-size: 12px; 
+            color: $lgray;
+            margin-left: 15px;
+        }
+    }
+    
+    .rs_box{
+        position: relative;
+        border: 1px solid $linegray;
+        border-top: none;
+        padding: 22px 20px 18px 90px;
+    }
+    
+    h4{
+        font-family: $ffa;
+        font-weight: bold;
+        color: $dgray;
+        margin-bottom: 10px;
+        span{
+            font-size: 12px; 
+            color: $lgray;
+            margin-left: 15px;
+            font-weight: normal;
+        }
+    }
+    
+    p{
+        color: $lgray;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    
+    img{
+        position: absolute;
+        left: 20px;
+        top: 23px;
+    }
+    
+    .btn{
+        width: 170px;
+        margin-left: 305px;
+    }
+    
+}

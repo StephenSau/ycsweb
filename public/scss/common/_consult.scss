@@ -1,0 +1,26 @@
+@import 'variable';
+@import 'maxin';
+
+.consult_line{
+    margin-bottom: 20px;
+    a{
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        letter-spacing: 5px;
+        .icon{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            @include sIconSprite(15, 20px, 21px);
+        }
+    }
+    span{
+        color: $lgray;
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,31 @@
+@import 'variable';
+@import 'maxin';
+
+
+.exempt_box{
+    width: 960px;
+    
+    font-family: $ffa;
+    h1{
+        @include title(0, $lblue);
+    }
+    
+    div{
+        border: 1px solid $linegray;
+        border-top: none;
+        color: $mgray;
+        padding: 35px 40px 20px;
+    }
+    
+    h3{
+        color: $lblue;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    p{
+        
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+}

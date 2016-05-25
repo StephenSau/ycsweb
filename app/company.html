@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+    <title>Example directive</title>
+    <script type="text/javascript" src="../public/js/vendor/angular.min.js"></script>
+    <script type="text/javascript" src="../public/js/companyApp.js"></script>
+    <style>
+    	input{
+    		font-size: 20px;
+    	}
+    	select {
+    		font-size: 20px;
+    	}
+    	ol{
+    		overflow: hidden;
+    		clear: both;
+    	}
+		ol>li{
+			list-style: none;
+			float: left;
+			margin: 5px 20px 0 0;
+		}
+		ol>li:first-child{
+			float: none;
+			clear: both;
+			margin-bottom: 20px;
+			font-size: 28px;
+		}
+		.industryBox{
+			overflow:hidden;
+			clear:both;
+		}
+		.industryBox ul{
+			list-style: none;
+			margin-left: 2em;
+			width: 280px;
+			height: 560px;
+			overflow: auto;
+			padding: 10px;
+			float: left;
+			border: 1px solid #d6d6d6;
+		}
+
+		.industryBox ul li{
+			cursor: pointer;
+			margin-bottom: 5px;
+			padding: 2px 5px;
+
+		}
+		.industryBox ul li:hover{
+			background-color: #f0f0f0;
+		}
+
+		.industryBox ul li.active{
+			background-color: #1153a7;
+			color: #ffffff;
+		}
+    </style>
+</head>
+<body>
+	
+	<div ng-controller="companyCtrl">
+		<ol>
+			<li><p>{{company.city + company.name + company.industry + company.type}}</p></li>
+			<li>
+				<select ng-model="company.city" name="companyCity">
+					<option value="广州">广州</option>
+					<option value="广州市">广州市</option>
+				</select>
+			</li>
+			<li>
+				<input type="text" name="companyName" ng-model="company.name" />
+			</li>
+			<li><input type="text" name="companyIndustry" ng-model="company.industry"></li>
+			<li>
+				<select ng-model="company.type" name="companyType">
+					<option value="有限公司">有限公司</option>
+					<option value="有限责任公司">有限责任公司</option>
+				</select>
+			</li>
+			
+		</ol>
+	<div class="industryBox">
+		<ul>
+			<li ng-repeat="item in industryType" ng-class="{active:item.active}" ng-click="picker($index, 'industryType')" id="{{item.id}}">{{item.value}}</li>
+		</ul>
+		<ul>
+			<li ng-repeat="item in industryClass"  ng-class="{active:item.active}" ng-click="picker($index, 'industryClass')" id="{{item.id}}">{{item.value}}</li>
+		</ul>
+		<ul>
+			<li ng-repeat="item in industryName" ng-click="picker($index, 'industryName')"  ng-class="{active:item.active}" id="{{item.id}}">{{item.value}}</li>
+		</ul>
+	</div>
+	</div>
+</body>
+</html>

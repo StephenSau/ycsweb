@@ -1,0 +1,30 @@
+body{
+    background-color: #ffffff;
+}
+.nav{
+    margin-bottom: 0;
+}
+.topic_content{
+	position: relative;
+    width: 960px;
+    margin: 0 auto;
+    img{
+        display: block;
+    }
+    .tc_line01, .tc_line02, .tc_line03{
+    	position: absolute;
+    }
+    .tc_line01{
+    	top: 2722px;
+    	left: 328px;
+    }
+    .tc_line02{
+    	top: 2800px;
+    	left: 449px;
+    }
+    .tc_line03{
+    	display:none;
+    	top: 2820px;
+    	left: 262px;
+    }
+}

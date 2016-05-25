@@ -1,0 +1,87 @@
+@import "variable";
+@import "maxin";
+
+
+.order_serice_box{
+    h3{
+        padding-bottom: 10px;
+        border-bottom: 4px solid #1153a7;
+        font-size: $lfs;
+        color: #1153a7;
+        font-family: $ffa;
+    }
+    
+    ol{
+        padding-top: 19px;
+        height: 451px;
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        li{
+            padding: 0 14px 5px;
+        }
+        label{
+            font-family: $ffa;
+            color: $mgray;
+            &.block{
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+        select{
+            margin-bottom: 10px;
+            height: 24px;
+        }
+        .chosen{
+            margin-bottom: 10px;
+        }
+        
+        .osb_mainclass{
+            width: 180px;
+        }
+        
+        .osb_subclass{
+            width: 180px;
+        }
+        
+        .osb_province{
+            width: 82px;
+            margin-right: 13px;
+        }
+        
+        .osb_city{
+            width: 85px;
+        }
+        
+        .osb_readme{
+            padding: 19px 14px 19px;
+            border-top: 1px dashed #dddddd;
+            border-bottom: 1px dashed #dddddd;
+            
+            textarea{
+                width: 180px;
+                height: 79px;
+                line-height: 24px;
+                color: $lgray;
+                border: 1px solid transparent;
+                color: $mgray;
+                font-size: 14px;
+            }
+        }
+        
+        .osb_text{
+            @include text(98px);
+        }
+        
+        .osb_upline{
+            padding-top: 20px;
+        }
+        
+        .osb_downline{
+            padding-bottom: 20px;
+        }
+        
+        .btn{
+            display: inline-block;
+        }
+    }
+}

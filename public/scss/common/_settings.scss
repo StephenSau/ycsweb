@@ -1,0 +1,143 @@
+@import 'variable';
+@import 'maxin';
+
+.settings_tab{
+    border-bottom: 4px solid $linegray;
+    margin-bottom: 20px;
+    li{
+        float: left;
+        padding-bottom: 13px;
+        border-bottom: 4px solid $linegray;
+        margin-bottom: -4px!important;
+        &:first-child a{
+            border-left: none;
+        }
+        
+        &.active{
+            border-bottom: 4px solid $morange;
+            a{
+                color: $morange;
+            }
+        }
+    }
+    
+    a{
+        font-size: 16px;
+        font-family: $ffa;
+        display: block;
+        padding: 0 28px;
+        border-left: 1px solid $linegray;
+        color: $mgray;
+        font-weight: bold;
+    }
+}
+
+.settings{
+    .setting_account, .setting_contactor{
+        display: none;
+        padding: 50px 0 67px 317px;
+    }
+    
+    .active{
+        display: block;
+    }
+    
+    .setting_contactor{
+        ol{
+            margin-bottom: 60px;
+        }
+    }
+    
+    li{
+         margin-bottom: 20px;
+    }
+    
+    .s_title{
+        display: inline-block;
+        width: 5em;
+        text-align: right;
+        font-family: $ffa;
+        color: $mgray;
+        margin-right: 5px;
+        em{
+            color: #db281f;
+        }
+        
+    }
+    
+    .s_text{
+        border:1px solid $linegray;
+        padding: 0 5px;
+        height: 28px;
+        line-height: 28px;
+        width: 238px;
+        vertical-align: middle;
+    }
+    
+    textarea{
+        border:1px solid $linegray;
+        padding: 5px 5px;
+        height: 36px;
+        width: 238px;
+        line-height: 18px
+    }
+    
+    .btn{
+        width: 130px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+        margin-left: 125px;
+    }
+    
+    .s_notitleline{
+        padding-left: 79px;
+    }
+    
+    select{
+        height: 24px;
+    }
+    
+    .s_province{
+        width: 140px;
+        margin-right: 5px;
+    }
+    
+    .s_city{
+        width: 180px;
+        margin-right: 5px;
+    }
+    
+    .s_district{
+        width: 140px;
+    }
+    
+    .s_contactor_card{
+        border: 1px solid $linegray;
+        padding: 14px 20px;
+        font-size: 12px;
+        margin: 0 50px 20px -50px;
+        color: $mgray;
+        width: 430px;
+        position: relative;
+        li{
+            margin-bottom: 12px;
+        }
+        .scc_opt{
+            position: absolute;
+            top: 14px;
+            right: 20px;
+            span{
+                padding: 3px 6px;
+                
+                border-radius: 3px;
+                background-color: $morange;
+                color: #ffffff;
+            }
+        }
+        a{
+            color: $lblue;
+        }
+        
+    }
+}

@@ -1,0 +1,22 @@
+@import 'variable';
+@import 'maxin';
+
+.content{
+    @include box-center;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.single{
+    width: 960px;
+}
+
+.mside{
+    width: 960px;
+    float: left;
+}
+
+.aside{
+    width: 210px;
+    float: right;
+}

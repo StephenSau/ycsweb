@@ -1,0 +1,167 @@
+@import 'variable';
+@import 'maxin';
+
+.tranc_step_box, .tranc_condition_box, .tranc_time_box, .tranc_material_box, .tranc_notice_box{
+    h3{
+        padding: 10px 0 10px 16px;
+        border-left: 6px solid $lblue;
+        color: $lblue;
+        background-color: #eef2f6;
+        font-size: 16px;
+        font-family: $ffa;
+        font-weight: bold;
+        margin-bottom: 28px;
+    }
+}
+
+.tranc_step_box{
+    padding-top: 30px; 
+    h4{
+        font-family: $ffa;
+        margin-bottom: 16px;
+        color: $mgray;
+        font-weight: bold;
+    }
+    
+    ol{
+        overflow: hidden;
+        width: 972px;
+        padding-bottom: 10px;
+        li{
+            float:left;
+            border-bottom: 4px solid #eb9000;
+            height: 96px;
+            width: 230px;
+            margin: 0 13px 20px 0;
+            background-color: #f7f7f7;
+        }
+        
+        p{
+            overflow: hidden;
+            padding: 25px 22px 0 15px;
+            font-size: 12px;
+            font-family: $ffa;
+            color: $mgray;
+            line-height: 18px;
+        }
+        
+        .icon{
+            float:left;
+            font-family: $ffn;
+            margin-right: 10px;
+            font-size: 24px;
+            color: #eb9000;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            @include bIconSprite(5, 50px, 50px);
+        }
+    }
+}
+*+html .tranc_step_box ol{
+    padding-bottom: 10px;
+}
+
+.tranc_condition_box{
+    padding-top: 50px;
+    ol{
+        li{
+            border-top: 1px dashed #dddddd;
+            font-family: $ffa;
+            line-height: 24px;
+            color: $mgray;
+            padding: 35px 0;
+            padding-left: 75px;
+            position: relative;
+            &:first-child{
+                border-top: none;
+            }
+            
+        }
+        
+        .icon{
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            left: 0;
+            display:block;
+            font-family: $ffn;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            color: #73a80d;
+            @include bIconSprite(6, 50px, 50px);
+        }
+    }
+}
+
+
+.tranc_time_box{
+    padding-top: 50px;
+    p{
+        font-family: $ffa;
+        color: $mgray;
+    }
+}
+
+.tranc_material_box{
+    padding-top: 50px;
+    li{
+        margin-bottom: 35px;
+        font-family: $ffa;
+        color: $mgray;
+    }
+}
+
+.tranc_notice_box{
+    padding-top: 50px;
+    ol{
+        margin-bottom: 50px;
+        li{
+            border-top: 1px dashed #dddddd;
+            font-family: $ffa;
+            line-height: 24px;
+            color: $mgray;
+            padding: 35px 0;
+            padding-left: 75px;
+            position: relative;
+            &:first-child{
+                border-top: none;
+            }
+            
+        }
+        
+        .icon{
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            left: 0;
+            display:block;
+            font-family: $ffn;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+            color: #db281f;
+            @include bIconSprite(13, 50px, 50px);
+        }
+    }
+}
+
+
+.tranc_btnline{
+    text-align: center;
+    margin-bottom: 45px;
+    .btn{
+        display: inline-block;
+        width: 250px;
+        border-radius: 8px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    
+}

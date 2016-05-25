@@ -1,0 +1,172 @@
+@import 'variable';
+@import 'maxin';
+
+.nav{
+    margin-bottom: 0;
+}
+
+.t_pbanner{
+    margin-bottom: 5px;
+}
+
+.t_content{
+    width: 960px;
+
+}
+
+.t_overview{
+    overflow: hidden;
+    margin-bottom: 30px;
+    .to_imgBox{
+        width: 428px;
+        height: 340px;
+        padding: 40px 0 0 40px;
+        margin-right: 13px;
+        float: left;
+        background: url('../img/topic/top003007.png') no-repeat;
+        img{
+            display: block;
+        }
+    }
+    .to_contentBox{
+        padding-top: 40px;
+        h1{
+            font-size: 24px;
+            font-weight: bold;
+            color: $lblue;
+            margin-bottom: 15px;
+            font-family: $ffa;
+        }
+        p{
+            line-height: 24px;
+            text-indent: 2em;
+            color: $dgray;
+        }
+        .toc_linkLine{
+            text-align: right;
+        }
+        a{
+            color: $morange;
+            &:hover{
+                color: $lblue;
+            }
+        }
+    }
+}
+
+.t_list{
+    background: url('../img/topic/top003025.jpg') 100% 50% no-repeat;
+    position: relative;
+    padding-bottom: 23px;
+    h2{
+        background: url('../img/topic/top003014.jpg') no-repeat;
+        height: 50px;
+        text-indent: -999em;
+        margin-bottom: 73px;
+    }
+
+    li{
+        margin-bottom: 47px;
+    }
+
+    h3{
+        background: url('../img/topic/top003018.png') no-repeat;
+        font-size: 20px;
+        color: $lblue;
+        font-family: $ffa;
+        font-weight: bold;
+        padding-left: 40px;
+        height: 31px;
+        line-height: 31px;
+        margin-bottom: 13px;
+    }
+
+    p{
+        width: 450px;
+        color: $dgray;
+        line-height: 20px;
+    }
+
+    .tl_line1{
+        padding-left: 200px;
+        h3{
+            background-image: url('../img/topic/top003018.png');
+        }
+    }
+
+    .tl_line2{
+        padding-left: 200px;
+        h3{
+            background-image: url('../img/topic/top003026.png');
+        }
+    }
+
+    .tl_line3{
+        h3{
+            background-image: url('../img/topic/top003030.png');
+        }
+    }
+
+    .tl_line4{
+        h3{
+            background-image: url('../img/topic/top003036.png');
+        }
+    }
+
+    .tl_line5{
+        padding-left: 200px;
+        h3{
+            background-image: url('../img/topic/top003039.png');
+        }
+    }
+
+    .tl_line6{
+        padding-left: 200px;
+        h3{
+            background-image: url('../img/topic/top003044.png');
+        }
+    }
+
+    img{
+        position: absolute;
+    }
+
+    .tl_img_1{
+        left: 17px;
+        top: 143px;
+    }
+
+    .tl_img_2{
+        left: 538px;
+        top: 412px;
+    }
+
+    .tl_img_3{
+        left: 17px;
+        top: 703px;
+    }
+}
+
+.t_photo_list{
+    overflow: hidden;
+    padding-bottom: 20px;
+    h2{
+        background: url('../img/topic/top003048.jpg') no-repeat;
+        height: 50px;
+        text-indent: -999em;
+        margin-bottom: 30px;
+    }
+
+    ul{
+        li{
+            float: left;
+            margin: 0 0 10px 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+            img{
+                display: block;
+            }
+        }
+    }
+}

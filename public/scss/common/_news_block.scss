@@ -1,0 +1,219 @@
+@import 'variable';
+@import 'maxin';
+
+
+.news_nav{
+    margin-bottom: 30px;
+}
+
+.news_block{
+    overflow: hidden;
+    margin-bottom: 10px;
+    h3{
+        padding-bottom: 10px;
+        margin-bottom: 22px;
+        font-size: 16px;
+        color: $lblue;
+        border-bottom: 4px solid #eef2f6;
+        font-family: $ffa;
+        a{
+            font-size: 16px;
+            font-family: $ffa;
+            color: $lblue;
+            &:hover{
+                color: $lblue;
+            }
+        }
+        
+    }
+    .nb_leftside{
+        float: left;
+        width: 320px;
+        
+    }
+    
+    .nb_rightside{
+        float: right;
+        width: 610px;
+    }
+    
+    li{
+        position: relative;
+    }
+    
+    b{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    
+    
+    .nb_photo_line{
+        margin-bottom: 27px;
+        a{
+            color: #ffffff;
+            display: block;
+            &:hover{
+                span{
+                    background-color: #000000;
+                }
+            }
+            
+            img{
+                margin: 0;
+                border:none;
+            }
+            
+            span{
+                display: block;
+                width: 100%;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                background-color: #000000;
+                background-color: rgba(0, 0, 0, .8);
+                margin-top: -38px;
+                position: relative;
+                
+            }
+        }
+    }
+    
+    .nb_promote_line{
+        margin-bottom: 22px;
+        a{
+            color: $dgray;
+            text-decoration: none;
+            width: 290px;
+            display: inline-block;
+            vertical-align: middle;
+            @include ellipsis;
+            &:hover{
+                color: $lblue;
+            }
+        }
+        .icon{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+            @include sIconSprite(18);
+        }
+    }
+    
+    .nb_rightside{
+        li{
+            padding-bottom: 10px;
+            position: relative;
+            padding-left: 17px;
+            line-height: 19px;
+            font-size: 12px;
+            color: $lgray;
+        }
+        
+        .nb_hasline{
+            border-bottom: 1px dashed $linegray;
+            padding-bottom: 18px;
+            margin-bottom: 25px;
+        }
+        ul{
+               a{
+                text-decoration: none;
+                display: block;
+                color: $dgray;
+                width: 500px;
+                font-size: 14px;
+                margin-bottom: 10px;
+                @include ellipsis;
+                &:hover{
+                    color: $lblue;
+                }
+            } 
+        }
+        
+        
+        b{
+            color: $lgray;
+            font-weight: normal;
+        }
+        
+        span{
+            color: $mgray;
+            position: absolute;
+            right: 0;
+            top: 2;
+        }
+        .icon{
+            display: block;
+            position: absolute;
+            top: -1px;
+            left: -3px;
+            @include sIconSprite(8, 20px, 14px);
+        }
+    }
+
+    .nb_special{
+        li{
+            a{
+                font-weight: normal;
+                color: $dgray;
+            }
+        }
+        
+    }
+    
+    .nb_normal{
+        li{
+            margin-bottom: 27px;
+            position: relative;
+        }
+        ul{
+          a{
+                color: $dgray;
+                text-decoration: none;
+                display: inline-block;
+                width: 300px;
+                @include ellipsis;
+                &:hover{
+                    color: $lblue;
+                }
+            }  
+        }
+
+        b{
+            color: $lgray;
+            font-weight: normal;
+        }
+        
+        span{
+            color: $mgray;
+            position: absolute;
+            right: 0;
+            top: 2;
+        }
+        .icon{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 -4px 0 -7px;
+            @include sIconSprite(8, 20px, 14px);
+        }
+    }
+    
+    .nb_firstcol{
+        width: 450px;
+        float: left;
+        a{
+            width: 380px;
+        }
+    }
+    
+    .nb_secondcol{
+        width: 480px;
+        float: right;
+        a{
+            width: 420px;
+        }
+    }
+    
+    
+}

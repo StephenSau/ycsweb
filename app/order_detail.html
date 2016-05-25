@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>壹财税-一站式财税服务平台</title>
+    <meta name="keywords" content="..." />
+    <meta name="description" content="..." />
+    <link type="text/css" rel="stylesheet" href="../public/css/order_detail.css" />
+    <script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?7f22c04f525c4961b0b57297567c105d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-67999660-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+   <!-- header model start-->
+    <div class="header">
+        <div class="h_container">
+            <ul class="h_leftside" id="h_status">
+                <li><a href="register.html" class="line">注册</a></li>
+                <li class="h_noline"><a href="login.html">登录</a></li>
+            </ul>
+            <ul class="h_rightside">
+                <li class="line"><a href="/">壹财税首页</a></li>
+                <li class="line"><a id="qqTalk_header_btn_01" href="javascript:void(0);">在线客服</a></li>
+                <li class="h_hassub">
+                    <a href="javascript:;" id="h_showCodeBox">
+                        <span class="icon_weixin"></span>
+                    </a>
+                    <!--del weibo position-->
+                    <div class="h_two_code_box" id="h_codeBox">
+                        <p class="htcb_photeline">
+                            <span>
+                                <img src="../public/img/tdc_01.png" alt="" width="110" height="110">
+                                <em>官方微信订阅号</em>
+                            </span>
+                            <span>
+                                <img src="../public/img/tdc_02.png" alt="" width="110" height="110">
+                                <em>官方微信服务号</em>
+                            </span>
+                        </p>
+                        <p class="htcb_readme">专业财税资讯、优质财税服务，财税疑问在线解答，壹财税微信号帮到您</p>
+                    </div>
+                </li>
+                <li class="h_hassub h_noline">
+                    <a href="javascript:;" id="h_showMap">
+                        <i class="icon_nav"></i>网站地图<i class="icon_arrow"></i>
+                    </a>
+                    <ul class="h_subbox" id="h_map">
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/fuwu">财税服务</a></li>
+                        <li class="h_noline"><a href="/zixun">资讯</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header model end-->
+    <!-- navigation model start-->
+    <div class="nav">
+       <div class="n_container">
+           <h2 class="n_logo">
+                <a href="/" title="壹财税-一站式财税服务平台">
+                    <img src="../public/img/logo.png" width="230" height="30" alt="壹财税-一站式财税服务平台">
+                </a>
+            </h2>
+            <ul >
+                <li><a class="selected" href="/app/order_list.html">我的订单</a></li>
+                <li><a href="/app/settings.html">账户设置</a></li>
+                <li><a href="/app/modify_password.html">安全中心</a></li>
+                <li><a href="/app/message.html">消息通知</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    <!-- navigation model end-->
+    
+    <div class="content">
+        <!-- order progress bar model start-->
+        <div class="order_progressbar" id="order_progressbar">
+            <ol class="op_text">
+                <li class="op_step_01" id="op_step_01"><em>提交订单信息</em><i></i></li>
+                <li class="op_step_02" id="op_step_02"><em>服务商确认订单</em><i></i></li>
+                <li class="op_step_03" id="op_step_03"><em>付款到壹财税</em><i></i></li>
+                <li class="op_step_04" id="op_step_04"><em>服务商进行服务</em><i></i></li>
+                <li class="op_step_05" id="op_step_05"><em>确认完成</em><i></i></li>
+            </ol>
+            <div class="op_container">
+                <ul class="op_background">
+                    <li class="op_step_01"></li>
+                    <li class="op_step_02"></li>
+                    <li class="op_step_03"></li>
+                    <li class="op_step_04"></li>
+                    <li class="op_step_05"></li>
+                </ul>
+                <p class="op_bar"></p>
+                <ol class="op_step_box">
+                    <li class="op_step_01">1</li>
+                    <li class="op_step_02">2</li>
+                    <li class="op_step_03">3</li>
+                    <li class="op_step_04">4</li>
+                    <li class="op_step_05">5</li>
+                </ol>
+            </div>
+        </div>
+        <!-- order progress bar model start-->
+        
+        <div class="order_status">
+            <p class="os_overview">订单号：<span id="oso_number">--</span> 订单状态：<em id="oso_status">--</em></p>
+            <p class="os_btnline" id="os_btnLine"></p>
+            <div class="order_service" id="order_service"></div>
+            <p class="os_remark" id="os_remark"></p>
+        </div>
+        <div class="order_detail" id="order_detail">
+            <h2>订单详情</h2>
+            <div class="od_box">
+                <ul class="od_info" id="od_info"></ul>
+                <div class="od_paytype" id="od_paytype">
+                    <h3>支付方式</h3>
+                    <p id="od_paytype_tab">
+                        <a href="javascript:;" class="active" data-role="item" data-target="opt_bank opl_bankpay">线下支付<i class="icon"></i></a>
+                        <a href="javascript:;" data-role="item" data-target="opl_alipay">支付宝支付<i class="icon"></i></a>
+                        <a href="javascript:;" data-role="item" data-target="opl_wxpay">微信支付<i class="icon"></i></a>
+                    </p>
+                    <p class="opt_remark" id="opt_bank">您可选择通过 银行汇款 的方式完成支付。壹财税目前支持包括：工商银行、中国银行、建设银行、农业银行……等多家银行的同行汇款。如果是跨行汇款或异地汇款，银行将可能向您收取一定的交易手续费。如果您希望进行线下支付，请点击以下按钮。</p>
+                    
+                </div>
+            </div>
+            <div class="order_payline" id="order_payline">
+                <p class="opl_paidLine" id="opl_payedLine">
+                    已付金额： <em id="od_paid_amount">--</em>
+                </p>
+                <p class="opl_bankpay" id="opl_bankpay">
+                    应付金额： <em id="od_bank_amount">--</em><br/>
+                    <a href="javascript:;" class="btn btn_primary od_bank_confirm">查看具体汇款说明</a>
+                </p>
+                <p class="opl_alipay" id="opl_alipay">
+                    应付金额： <em id="od_alipay_amount">--</em><br/>
+                    <a href="javascript:;" class="btn btn_primary od_alipay_confirm" target="_blank">确认支付</a>
+                </p>
+                <p class="opl_wxpay" id="opl_wxpay">
+                    应付金额： <em id="od_wxpay_amount">--</em><br/>
+                    <a href="javascript:;" class="btn btn_primary od_wxpay_confirm">确认支付</a>
+                </p>
+            </div>
+        </div>
+        <div class="order_weboff" id="order_weboff">
+            <h3>线下支付</h3>
+            <div class="owo_box">
+                <p class="owo_moneyline">转账金额：<em id="order_weboff_amount">--</em></p>
+                <p class="owo_code">转账备注信息请填写：<em id="order_weboff_remark"></em></p>
+                <ol>
+                    <li>1. 转账时请切记将订单号填写到转账单【备注信息】栏内</li>
+                    <li>2. 请在3天内付清款项，超过3天系统会取消订单。</li>
+                    <li>3. 在确认收到您的款项后，我们将马上安排服务商为您提供服务。确认收款的时间一般为1-3个工作日（视银行具体情况而定），请耐心等待。</li>
+                </ol>
+                <p class="owo_remark">如有任何疑问，请联系壹财税客服。</p>
+                <table>
+                    <tr>
+                        <th colspan="4">壹财税对公账号</th>
+                    </tr>
+                    <tr>
+                        <td><i class="owo_bank_02"></i>中国建设银行</td>
+                        <td>账号：44001580107059001297</td>
+                        <td>开户行：建行直属支行</td>
+                        <td>账户名称：广州浠牛网络科技有限公司</td>
+                    </tr>
+                    <tr>
+                        <td><i class="owo_bank_03"></i>中国银行</td>
+                        <td>账号：640565926854</td>
+                        <td>开户行：中国银行广州双城国际大厦支行</td>
+                        <td>账户名称：广州浠牛网络科技有限公司</td>
+                    </tr>
+                    <tr>
+                        <td><i class="owo_bank_04"></i>中国农业银行</td>
+                        <td>账号：44065201040004885</td>
+                        <td>开户行：广州华穗路支行</td>
+                        <td>账户名称：广州浠牛网络科技有限公司</td>
+                    </tr>
+                    <tr>
+                        <td><i class="owo_bank_05"></i>中国工商银行</td>
+                        <td>账号：3602176419100088288</td>
+                        <td>开户行：广州星汇园支行</td>
+                        <td>账户名称：广州浠牛网络科技有限公司</td>
+                    </tr>
+                </table>
+                <p class="oww_alipay">
+                    <a href="javascript:;" target="_blank" class="btn btn_unneed od_alipay_confirm">改为支付宝支付</a>
+                    <a href="javascript:;" class="btn btn_unneed od_wxpay_confirm">改为微信支付</a>
+                </p>
+            </div>
+        </div>
+        <div class="order_wx" id="order_wx">
+            <h3>微信支付</h3>
+            <div class="owx_box">
+                <p class="owx_moneyline">支付金额：<em id="order_wx_amount">--</em></p>
+                <h4>请及时付款，以便订单尽快处理！</h4>
+                <p class="owx_remark">温馨提示：请以壹财税网站平台微信支付信息为准，切勿相信其他任何形式的支付、退款、优惠信息，谨防受骗！有任何支付问题请点击页面右上角“在线客服”联系客服或拨打客服热线：4008-310-866</p>
+                <p class="owx_photo_line">
+                    <img id="owx_code_photo" src="../public/img/imgPlaceholder.png" width="260" height="260" />
+                    <img src="../public/img/wx_photo02.png" width="260" height="86" />
+                </p>
+                <p class="oww_changePay">
+                    <a href="javascript:;" class="btn btn_unneed od_bank_confirm">改为线下支付</a>
+                    <a href="javascript:;" target="_blank" class="btn btn_unneed od_alipay_confirm">改为支付宝支付</a>
+                </p>
+            </div>
+        </div>
+    </div>
+       
+
+    
+    <!--footer model start-->
+    <div class="footer">
+        <p class="f_readme">除特别注明外，作品版权归壹财税所有。如果无意之中侵犯了您的权益，请来信告知，本站将在三个工作日内做出处理</p>
+        <p class="f_map">
+            <a href="/about" title="关于我们" target="_blank">关于我们</a> |
+            <a href="/team" title="团队介绍" target="_blank">团队介绍</a> |
+            <a href="/recruit" title="人才招聘" target="_blank">人才招聘</a> |
+            <a href="/milestone" title="大事记" target="_blank">大事记</a> |
+            <a href="/contact" title="联系我们" target="_blank">联系我们</a> |
+            <a href="/aptitude" title="资质文件" target="_blank">资质文件</a> |
+            <a href="/disclaim" title="免责申明" target="_blank">免责申明</a> |
+            <a href="/fuwu/all" title="全部服务" target="_blank">全部服务</a> |
+            <a href="/zixun/787.html" title="服务商进驻" target="_blank">服务商进驻</a> |
+            <a href="/help" title="帮助中心" target="_blank">帮助中心</a>
+        </p>
+        <p class="f_safe">
+            <a target="_blank" rel="nofollow" id="_pingansec_bottomimagesmall_shiming" href="http://si.trustutn.org/info?sn=554150906015506542095"><img src="http://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+        </p>
+        <p class="f_copyright">壹财税 版权所有 Copyright © 2015 www.1caishui.com All Rights Reserved   粤ICP备15017127号-1</p>
+    </div>
+    <!--footer model end-->
+    
+    <script type="text/x-handlebars-template" id="service_item_template">
+        <h3>服务跟踪</h3>
+        {{#each serviceItemList}}
+        <h4>{{name}}</h4>
+        <ol>
+           {{#each steps}}
+            <li {{#if status}}class="active"{{/if}}>
+                <div>
+                    <p><i class="icon">{{formatIndex @index}}</i>{{subject}}</p><b class="icon"></b>
+                </div>
+                {{#if status}}
+                <p>完成时间：{{modified}}</p>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ol>
+        {{/each}}
+    </script>
+    <script type="text/x-handlebars-template" id="info_template">
+        <li>
+            <h3>服务商信息</h3>
+            <dl>
+                <dt>服务商：</dt>
+                <dd><a target="_blank" href="/sp/{{order.srid}}">{{servicer.servicername}}</a></dd>
+                <dt>公司地址：</dt>
+                <dd>{{servicer.companyaddress}}</dd>
+                <dt>联系电话：</dt>
+                <dd>{{servicer.tel}}</dd>
+            </dl>
+        </li>
+        <li>
+            <h3>联系人信息</h3>
+            <dl>
+                <dt>联系人：</dt>
+                <dd>{{orderContactInfos.contacts}}</dd>
+                <dt>手机号码：</dt>
+                <dd>{{orderContactInfos.ccmobile}}</dd>
+            </dl>
+        </li>
+        <li>
+            <h3>服务信息</h3>
+            <dl>
+                <dt>服务名称：</dt>
+                <dd><a target="_blank" href="/fuwu/{{order.sdcat1}}-{{order.sdcat2}}-{{order.sdid}}-{{order.province}}-{{order.city}}-{{order.district}}">{{orderContactInfos.servicename}}</a>【{{orderContactInfos.serviceversion}}】</dd>
+                <dt class="odi_nofloat">服务内容：</dt>
+                <dd>
+                    <ol>
+                        {{#each serviceItemList}}
+                        <li>
+                            <h4>{{addOne @index}}、{{name}}</h4>
+                            {{#if selectedOpts.length}}
+                            <dl>
+                                <dt>服务选项:</dt>
+                                <dd>
+                                    {{#each selectedOpts}}
+                                    {{name}}（{{content}}）<br/>
+                                    {{/each}}
+                                </dd>
+                            </dl>
+                            {{/if}}
+                        </li>
+                        {{/each}}
+                    </ol>
+                </dd>
+            </dl>
+        </li>
+        {{#if order.paid}}
+        <li>
+            <h3>支付方式</h3>
+            <p>{{toText order.paytype}}</p>
+        </li>
+        {{/if}}
+    </script>
+    <script type="text/x-handlebars-template" id="confirm_over_template">
+        <div class="message_box" id="message_box">
+            <h3>壹财税提醒您</h3>
+            <p>1. 请确认服务商已完成所有订单服务？</p>
+            <p>2. 一旦确认服务，服务商与客户之间的服务交易即为完成，有任何售后问题，请与壹财税客服联系。</p>
+            <p class="mb_btnline"><a id="mb_confirmBtn" href="javascript:;" class="btn btn btn_warning">确认完成</a><a id="mb_cancelBtn" href="javascript:;" class="btn btn_unneed">取消</a></p>
+        </div>
+    </script>
+    <script type="text/x-handlebars-template" id="break_off_template">
+        <div class="message_box" id="message_box">
+            <h3>壹财税提醒您</h3>
+            <p>1. 如果您对服务过程中订单服务内容或服务质量不满意，亦或服务商损害到您或贵公司的利益，<em>请与客服联系，壹财税会为您管理及调整（或更换）服务商与服务内容</em>，确保您能享受高质量财税服务。</p>
+            <p>2. 因服务商的原因造成服务不到位而申请中止订单，在核实情况后，<em>壹财税会根据具体情况向客户进行合理赔付。</em></p>
+            <p>3. 订单中止流程：申请中止订单>壹财税客服确认>中止订单处理>完成（订单关闭）。</p>
+            <p class="mb_btnline"><a id="mb_breakOffBtn" href="javascript:;" class="btn btn_unneed" onclick="document.getElementById('qqTalk_header_btn_01').click()">确认申请中止</a><a id="mb_cancelBtn" href="javascript:;" class="btn btn_warning">取消</a></p>
+        </div>
+    </script>
+    <script type="text/x-handlebars-template" id="cancel_template">
+        <div class="message_box cancel_box" id="message_box">
+           <h3>取消订单</h3>
+           <p class="mb_optline">
+               <select name="" id="cancel_reason">
+                    <option value="">取消原因</option>
+                    <option value="现在不想购买">现在不想购买</option>
+                    <option value="重复下单">重复下单</option>
+                    <option value="下单信息有误">下单信息有误</option>
+                    <option value="商品价格较贵">商品价格较贵</option>
+                    <option value="无法支付">无法支付</option>
+                    <option value="客服态度差">客服态度差</option>
+                    <option value="其他">其他</option>
+               </select>
+               <a href="javascript:;" id="mb_submitBtn" class="btn btn_unneed">提交</a>
+               <a href="javascript:;" id="mb_cancelBtn" class="btn btn_info">放弃</a>
+           </p>
+           <p class="consult_line">找不到满意的服务？看看客服能不能帮您！<a href="javascript:;" class="btn btn_warning" onclick="document.getElementById('qqTalk_header_btn_01').click()"><i class="icon"></i>在线咨询</a></p>
+       </div>
+    </script>
+    <script type="text/x-handlebars-template" id="dial_template">
+        <div class="message_box dial_box" id="message_box">
+            <p class="mb_btnline">
+                <input type="tel" class="mb_text" name="phone" maxlength="15" id="dial_phone" placeholder="请输入您的手机或固话号码">
+                <a href="javascript:;" id="dial_btn" class="btn btn_warning">立即免费通话</a></p>
+            <p>壹财税将免费拨打您与服务商电话，请稍后接听4008-310-866，并耐心等待服务商接听</p>
+        </div>
+    </script>
+    <script type="text/x-handlebars-template" id="confirm_alipay_template">
+        <div class="message_box" id="message_box">
+            <h3>登录支付宝支付</h3>
+            <p>请您在新打开的支付宝页面进行支付，支付完成前请不要关闭该窗口。</p>
+            <p class="mb_btnline"><a id="mb_confirmPayBtn" href="javascript:;" class="btn btn btn_warning">已完成支付</a><a id="mb_cancelBtn" href="javascript:;" class="btn btn_unneed">支付不成功</a></p>
+        </div>
+    </script>
+    <script type="text/x-handlebars-template" id="confirm_wxpay_template">
+        <div class="message_box" id="message_box">
+            <h3>微信支付</h3>
+            <p class="mb_wxpay_line"><i class="icon"></i>您已付款成功</p>
+            <p class="mb_btnline"><a id="mb_confirmPayBtn" href="javascript:;" class="btn btn btn_warning">查看订单</a><a  href="/" class="btn btn_unneed">返回首页</a></p>
+        </div>
+    </script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=49998824" charset="UTF-8"></script>
+    <script type="text/javascript" src="../public/js/vendor/require.js"></script>
+    <script type="text/javascript" src="../public/js/config.js"></script>
+    <script type="text/javascript" src="../public/js/order_detail.js"></script>
+    
+</body>
+</html>

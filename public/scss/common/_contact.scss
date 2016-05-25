@@ -1,0 +1,57 @@
+@import 'variable';
+@import 'maxin';
+
+body{
+    background-color: #f7f7f7;
+}
+
+.contact_box{
+    width: 960px;
+    
+    font-family: $ffa;
+    
+    div{
+        background-color: #ffffff;
+        border: 1px solid $linegray;
+        overflow: hidden;
+        padding: 155px 0 155px 80px;
+        color: $mgray;
+        
+    }
+    
+    p{
+        float: left;
+        padding:10px 32px 0 0;
+        span{
+            width: 132px;
+            float: left;
+            text-align: center;
+            margin-right: 18px;
+        }
+        img{
+            display: block;
+            float: left;
+            padding: 11px;
+            border: 1px solid $linegray;
+            margin-bottom: 10px;
+        }
+    }
+    
+    ol{
+        overflow: hidden;
+        
+        padding-left: 50px;
+        border-left: 2px solid $linegray;
+        strong{
+            color: $lblue;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        li{
+            margin-top: 16px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+}

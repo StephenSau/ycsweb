@@ -1,0 +1,199 @@
+@import 'variable';
+@import 'maxin';
+
+body{
+    background-color: #f7f7f7;
+}
+
+
+.register_box{
+    margin-bottom: 90px;
+    @include box-center(1100px);
+    
+    h1{
+        font-size: 16px;
+        background-color: $lblue;
+        color: #ffffff;
+        font-family: $ffa;
+        font-weight: bold;
+        padding: 12px 20px;
+    }
+    
+    .rb_loginline{
+        text-align: right;
+        margin: -28px 0 15px;
+        a{
+            font-size: 12px;
+            font-family: $ffa;
+            color: #f9df00;
+
+            padding-right: 20px;
+            
+        }
+        
+    }
+    
+    ol, .register_success_box{
+        border:1px solid $linegray;
+        border-top: none;
+        background-color: #ffffff;
+        padding: 40px 0 77px 325px;
+    }
+    
+    li{
+        margin-bottom: 20px;
+    }
+    
+    .rb_title{
+        display: inline-block;
+        width: 5em;
+        text-align: right;
+        font-family: $ffa;
+        color: $mgray;
+        margin-right: 5px;
+        em{
+            color: #db281f;
+        }
+        
+    }
+    
+    .rb_text{
+        border:1px solid $linegray;
+        padding: 0 5px;
+        height: 28px;
+        line-height: 28px;
+        width: 268px;
+        vertical-align: middle;
+    }
+    
+    .rb_phone{
+        width: 149px;
+    }
+    
+    .rb_code{
+        width: 108px;
+    }
+    
+    .rb_getCodeBtn{
+        font-size: 12px;
+        display: inline-block;
+        width: 118px;
+        border: 1px solid $linegray;
+        border-left: none;
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+        color: $mgray;
+        background-color: #f7f7f7;
+    }
+    
+    .rb_agreeline{
+        padding-left: 77px;
+        margin-bottom: 31px;
+        label{
+            color: $mgray;
+            font-family: $ffa;
+            a{
+                color: $lblue;
+            }
+        }
+    }
+    
+    .rb_btnline{
+        padding-left: 100px;
+        .btn{
+            width: 230px;
+        }
+    }
+    
+    .register_success_box{
+        display: none;
+        padding: 80px 0 60px 0;
+        text-align: center;
+        color: $mgray;
+        h3{
+            font-family: $ffa;
+            font-weight: bold;
+            font-size: 24px;
+            color: $mgreen;
+            margin-bottom: 20px;
+            i{
+                display: inline-block;
+                margin-bottom: 20px;
+                @include bIconSprite(8, 60px, 60px);
+            }
+        }
+        
+        .rsb_text{
+            margin:83px 0 30px;
+            padding-top: 29px;
+            border-top: 1px dashed $linegray;
+            font-size: 16px;
+            font-family: $ffa;
+        }
+        .btn{
+            display: inline-block;
+            width: 9em;
+            margin: 0 5px;
+        }
+    }
+}
+
+@media all and (min-width: 0px){
+    .rb_getCodeBtn{
+        vertical-align:bottom;
+    }
+}
+
+
+.rb_imageCodeBox{
+    width: 500px;
+    font-family: $ffa;
+    h2{
+        color: $lblue;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    
+    .rbi_inputline{
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    
+    label{
+        color: $mgray;
+    }
+    
+    input{
+        line-height: 28px;
+        border: 1px solid $linegray;
+        padding: 0 5px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    
+    img{
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+    
+    .rbi_btnline{
+        text-align: center;
+    }
+    
+    .btn{
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        display: inline-block;
+        
+    }
+}
+
+*+html .rb_getCodeBtn{
+        vertical-align:bottom;
+    }
+
+
+
+

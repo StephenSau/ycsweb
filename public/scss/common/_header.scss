@@ -1,0 +1,159 @@
+@import 'variable';
+@import 'maxin';
+
+.header{
+    font-size: 12px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid $linegray;
+    
+    .h_container {
+        @include box-center;
+        height: 13px;
+        padding: 8px 0 7px;
+    }
+    
+    li{
+        float: left;
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1px solid $linegray;
+        a{
+            color: $mgray;
+            &:hover{
+                color: $lblue;
+                .icon_nav{
+                    background-position: -204px -3px;
+                }
+                
+                .icon_arrow{
+                    background-position: -244px -3px;
+                }
+            }
+        }
+    }
+    
+    .h_noline{
+        padding-right: 0;
+        margin-right: 0;
+        border: none!important;
+    }
+    
+    .h_leftside{
+        float:left;
+    }
+    
+    .h_rightside{
+        float: right;
+    }
+    
+    .h_red{
+        background-color: #db281f;
+        color: #ffffff;
+        border-radius: 2px;
+        display: inline-block;
+        padding: 1px 1px;
+        min-width: 14px;
+        text-align: center;
+    }
+    
+    .icon_weixin, .icon_weibo{
+        display: inline-block;  
+        background-image: url('../img/smallIcon.png');
+        width: 16px;
+        height: 14px;
+       
+    }
+    
+    .icon_weixin{
+        background-position: -142px -3px;
+    }
+
+    .icon_weibo{
+       background-position: -162px -3px;
+    }
+    
+    
+    .icon_nav, .icon_arrow{
+        display: inline-block;
+        background-image: url('../img/smallIcon.png');
+        width: 11px;
+        height: 14px;
+        vertical-align: middle;
+    }
+    
+    
+    .icon_nav{
+        margin-right: 5px;
+        background-position: -184px -3px;  
+    }
+    
+    .icon_arrow{
+        margin-left: 5px;
+        background-position: -224px -3px;
+    }
+    
+    .h_hassub{
+        position: relative;
+        display: block;
+        z-index: 10;
+        a{
+            margin: 0 5px;
+        }
+    }
+    
+    .h_two_code_box{
+        display: none;
+        z-index: 10;
+        border: 1px solid #dddddd;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        padding-top: 20px;
+        width: 280px;
+        background-color: #ffffff;
+        .htcb_photeline{
+            overflow: hidden;
+            
+        }
+        .htcb_readme{
+            border-top: 1px dashed #dddddd;
+            padding: 5px 10px;
+            line-height: 18px;
+            background-color: #f7f7f7;
+        }
+        img{
+           margin-bottom: 5px;
+        }
+        
+        span{
+            float:left;
+            width: 110px;
+            margin: 0 15px 10px 15px;
+            text-align: center;
+        }
+    }
+    
+    
+    .h_subbox{
+        display: none;
+        top: 21px;
+        width: 100px;
+        left: -20px;
+        z-index: 10;
+        position: absolute;
+        border: 1px solid $linegray;
+        border-top: 2px solid $lblue;
+        background-color: #ffffff;
+        li{
+            border-right: none;
+            margin-right: 0;
+            padding: 11px 12px;
+            float: none;
+            border-bottom: 1px dashed #dddddd;
+        }
+    }
+}
+
+.header_without_nav{
+    border-bottom: 4px solid $lblue;
+}

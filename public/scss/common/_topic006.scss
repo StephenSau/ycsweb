@@ -1,0 +1,304 @@
+.nav{
+  margin-bottom: 0px;
+}
+
+.topBanner{
+  width: 1440px;
+  margin: 0 auto 30px;
+}
+
+.content{
+  width: 960px;
+  font-family: $ffa;
+  h2{
+    color: #e07a0d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: normal;
+
+    font-size: 24px;
+    border-bottom: 2px solid #e07a0d;
+  }
+}
+
+.line1, .line2, .line3, .line4, .line6{
+  margin-bottom: 30px;
+}
+
+.list{
+  margin-top: -10px;
+  li{
+    position: relative;
+    border-bottom: 1px dashed $linegray;
+    padding: 14px 15px;
+    color: $lgray;
+    font-size: 12px;
+    i{
+      position: absolute;
+      left: 0;
+      top: 12px;
+      color: $linegray;
+      font-size: 16px;
+    }
+    span{
+      position: absolute;
+      right: 0;
+      top: 14px;
+      color: $lgray;
+      font-size: 14px;
+    }
+    a{
+      display: block;
+      *display:inline-block;
+      color: $dgray;
+      font-size: 14px;
+      &:hover{
+        color: $lblue;
+      }
+    }
+  }
+}
+
+.contentBanner{
+  margin-bottom: 30px;
+}
+
+.line1{
+  img{
+    vertical-align: top;
+  }
+  overflow: hidden;
+  .col01{
+    border:1px solid #dddddd;
+    padding:9px;
+    width: 365px;
+    float: left;
+   .carousel-wrap{
+      width:100%;
+   }
+    .carousel-list{
+      position:relative;
+      border:1px solid #dddddd;
+      width:363px;
+      height:258px;
+      overflow:hidden;
+    }
+    .carousel_indicators{
+      bottom:8px;
+    }
+    .info{
+      display:block;
+      padding:20px 0 7px;
+      font-size:$xlfs;
+      text-align: center;
+      color:#666666;
+
+      &:hover{
+        color:#1153a7
+      }
+    }
+
+  }
+  .col02{
+    h2{
+      border:none;
+      margin-bottom:15px;
+      padding:0;
+      background-color:#ffefd2;
+      height:35px;
+      font-size:22px;
+      line-height:35px;
+      text-indent:10px;
+    }
+    width: 545px;
+    padding-left:30px;
+    float: right;
+    .list{
+      margin-top: -15px;
+    }
+    li{
+      &:first-child{
+        line-height: 1.5em;
+        a {
+          margin-bottom: 5px;
+        }
+
+      }
+      a{
+        font-size:16px;
+      }
+      padding: 15px 0 12px 20px;
+      .icon{
+        @include sIconSprite(18, 20px, 20px);
+        display: block;
+        left: -3px;
+        top: 13px;
+      }
+      span{
+        top: 15px;
+      }
+    }
+
+  }
+}
+
+.line2{
+  position:relative;
+  overflow: hidden;
+  .col01{
+    width: 467px;
+    float: left;
+  }
+  .col02{
+    width: 467px;
+    float: right;
+  }
+  h2{
+    margin-bottom:15px;
+  }
+
+}
+
+.whole {
+  .col01{
+    width:100%
+  }
+  .list{
+    width:100%;
+    overflow:hidden;
+  }
+
+  li{
+    width:437px;
+    float:left;
+  }
+  .odd{
+    margin-right:26px;
+  }
+
+}
+
+.line3{
+  ul{
+    overflow: hidden;
+  }
+  li{
+    margin-left: 26px;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    background-color: #efefef;
+    a{
+      color: $mgray;
+      &:hover{
+        color: $lblue;
+      }
+    }
+    &:first-child{
+      margin-left: 0px;
+    }
+    img{
+      display: block;
+      margin-bottom: 3px;
+    }
+    span{
+      display: block;
+      line-height: 1.5em;
+      height: 3em;
+      overflow: hidden;
+    }
+  }
+}
+
+.line4{
+  overflow: hidden;
+  li{
+    float: left;
+    width: 437px;
+  }
+  .odd{
+    margin-right: 26px;
+  }
+}
+
+.line5{
+  padding-bottom: 10px;
+  p{
+    padding: 0 0 0 9px;
+    overflow: hidden;
+  }
+  a{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: $lblue;
+    float: left;
+    width: 240px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ededed;
+    &.middle{
+      margin: 0 116px 20px 115px;
+    }
+  }
+}
+
+.line6{
+  h2{
+    margin-bottom: 0px;
+  }
+  .inner{
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+  }
+
+  ul{
+    li{
+      float: left;
+      padding: 35px 40px 20px;
+      text-align: center;
+      border-bottom: 1px dashed #dddddd;
+      img{
+        display: block;
+        margin-bottom: 13px;
+      }
+      a{
+        color: $mgray;
+        display: block;
+        width: 160px;
+        @include ellipsis;
+        &:hover{
+          color: $lblue;
+        }
+      }
+    }
+  }
+}
+
+
+.line7{
+  border: 1px solid $linegray;
+  text-align: center;
+  .photoLine{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    img{
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid $linegray;
+    }
+    span{
+      display: inline-block;
+      margin: 0 40px;
+      color: $mgray;
+    }
+  }
+  .textLine{
+    padding: 20px;
+    color: $lblue;
+    border-top: 1px solid $linegray;
+    background-color: #f7f7f7;
+  }
+}

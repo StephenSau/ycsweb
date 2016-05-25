@@ -1,0 +1,78 @@
+@import 'variable';
+@import 'maxin';
+
+
+
+.help_detail_header{
+    border-bottom: 4px solid $linegray;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    h1{
+        font-size: 24px;
+        color: $lblue;
+        margin-bottom: 10px;
+        font-family: $ffa;
+    }
+    
+    .hdh_label{
+        color: $dgray;
+        a{
+            font-size: 12px;
+            color: $lblue;
+            margin-right: 15px;
+            background-color: #f7f7f7;
+            padding: 5px;
+        }
+    }
+}
+
+.help_detail_text{
+    margin-bottom: 30px;
+    p{
+        text-indent: 2em;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+}
+
+
+.help_detail_feedback{
+    text-align: center;
+    margin-bottom: 30px;
+    .btn{
+        display: inline-block;
+        width: 170px;
+        margin-right: 20px;
+    }
+}
+
+
+
+.relate_link{
+    margin-bottom: 28px;
+    h3{
+        font-size: 16px;
+        font-family: $ffa;
+        color: $lblue;
+        padding-bottom: 10px;
+        margin-bttom: 10px;
+        border-bottom: 4px solid $linegray;
+    }
+    
+    li{
+        line-height: 34px;
+    }
+    
+    a{
+        color: $dgray;
+        &:hover{
+            color: $lblue;
+        }
+    }
+    
+    .icon{
+        display: inline-block;
+        margin: 0 -4px 0 -7px;
+        @include sIconSprite(8, 20px, 14px);
+    }
+}

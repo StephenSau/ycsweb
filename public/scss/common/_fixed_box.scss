@@ -1,0 +1,29 @@
+@import 'variable';
+@import 'maxin';
+
+.fixed_box{
+    position: fixed;
+    z-index: 5;
+    bottom: 320px;
+    right:  0;
+    
+    a{
+        background-color: #f0f0f0;
+        width: 2em;
+        padding: 10px;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        color: $mgray;
+        &:first-child{
+            margin-bottom: 2px;
+        }
+        &:hover{
+            color: $lblue;
+        }
+        .icon{
+            @include sIconSprite(21, 16px, 10px);
+            display: inline-block;
+        }
+    }
+}

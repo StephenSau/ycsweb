@@ -1,0 +1,196 @@
+@import 'variable';
+@import 'maxin';
+
+.bigBanner{
+	margin: -40px auto 0;
+	width: 100%;
+	overflow: hidden;
+	max-width: 1440px;
+	text-align: center;
+	img{
+		display: block;
+	}
+}
+
+.smallBanner{
+	margin: 0 auto;
+	width: 1200px;
+	text-align: center;
+	img{
+		display: block;
+	}
+}
+
+.topic_content{
+	width: 900px;
+	margin: 0 auto 30px;
+	padding: 0 30px 10px;
+	background-color: #fbf4e3;
+
+	.icon{
+		background-image: url('../img/topic/topic004001.png');
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
+
+	h2{
+		position: relative;
+		top: -18px;
+		margin-bottom: -28px;
+		left: -59px;
+		width: 160px;
+		height: 53px;
+		text-indent: -999em;
+	}
+
+	.title2{
+		background-position: 0 -60px;
+	}
+
+	.title3{
+		background-position: 0 -120px;
+	}
+
+	.list1{
+		padding: 24px 0 48px;
+		overflow: hidden;
+		li{
+			width: 200px;
+			float: left;
+			margin-right: 4px;
+			span{
+				color: $mgray;
+				font-size: 18px;
+				font-family: $ffa;
+				display: block;
+				padding: 5px 1em 0;
+			}
+		}
+		.icon{
+			display: block;
+			width: 198px;
+			height: 34px;
+		}
+		.line1 .icon{
+			background-position: 0 -180px;
+		}
+		.line2 .icon{
+			background-position: 0 -220px;
+		}
+		.line3 .icon{
+			background-position: 0 -260px;
+		}
+		.line4 .icon{
+			background-position: 0 -300px;
+		}
+	}
+	.list2{
+		padding: 24px 0 48px;
+		color: $mgray;
+		font-size: 18px;
+		font-family: $ffa;
+		.icon{
+			display: inline-block;
+			background-position: 0 -340px;
+			width: 17px;
+			height: 17px;
+			vertical-align: bottom;
+			margin-right: 10px;
+		}
+	}
+
+	.list3{
+		padding-top: 24px;
+		
+		li{
+			padding-bottom: 20px;
+			color: $mgray;
+		}
+		.icon{
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			margin-right: 10px;
+			vertical-align: bottom;
+		}
+		.line1 .icon{
+			background-position: -20px -340px;
+		}
+		.line2 .icon{
+			background-position: -40px -340px;
+		}
+		.line3 .icon{
+			background-position: -60px -340px;
+		}
+	}
+}
+
+.btnLine_position{
+	height: 150px;
+}
+
+.btnLine{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	.btnLine_outer{
+		background-color: #000000;
+		width: 100%;
+		height: 150px;
+		@include opacity(30);
+	}
+	.btnLine_inner{
+		z-index: 2;
+		overflow: hidden;
+		position: absolute;
+		width: 760px;
+		padding-left: 200px;
+		left: 50%;
+		margin-left: -480px;
+		top: 0;
+	}
+
+	.line1{
+		padding-top: 15px;
+		float: left;
+		color: #ffffff;
+		span{
+			padding: 6px;
+			display: block;
+			background-color: #ffffff;
+			margin-bottom: 10px;
+			img{
+				width: 84px;
+				height: auto;
+				display: block;
+			}
+		}
+	}
+
+	.line2{
+		float: left;
+		height: 80px;
+		width: 600px;
+		padding: 30px 0 0 30px;
+		margin: 20px 0 0 30px;
+		border-left: 1px solid #ffffff; 
+		.btn{
+			display: inline-block;
+			height: 50px;
+			font-size: 20px;
+			border-radius: 8px;
+			line-height: 50px;
+		}
+
+		.btn_warning{
+			width: 250px;
+			margin-right: 30px;
+		}
+
+		.btn_prompt{
+			width: 150px;
+		}
+	}
+}

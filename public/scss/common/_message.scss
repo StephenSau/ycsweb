@@ -1,0 +1,82 @@
+@import 'variable';
+@import 'maxin';
+
+.message{
+    h2{
+        font-size: 16px;
+        font-family: $ffa;
+        padding-bottom: 16px;
+        border-bottom: 4px solid $linegray;
+        color: $lblue;
+    }
+}
+
+.message_opt{
+    text-align: right;
+    margin: -36px 0 10px;
+    label{
+        margin-right: 25px;
+    }
+    .btn{
+        display: inline-block;
+        width: 80px;
+        font-family: $fft;
+        height: 26px;
+        line-height: 26px;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+}
+
+.message_list{
+    margin-bottom: 30px;
+    border: 1px solid $linegray;
+    border-top: none;
+    padding: 0 25px;
+    li{
+        padding: 24px 0;
+        border-top: 1px dashed $linegray;
+        color: $mgray;
+        overflow: hidden;
+        zoom: 1;
+        &:first-child{
+            border-top: none;
+        }
+        input{
+            float: left;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        em{
+            float: left;
+            margin-right: 5px;
+            border-radius: 3px;
+            background-color: $mred;
+            color: #ffffff;
+            padding: 1px 2px 0;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        strong{
+            margin-right: 5px;
+            float: left;
+            color: $lblue;
+        }
+        
+        span{
+            float: left;
+            width: 640px;
+            vertical-align: text-top;
+            line-height: 18px; 
+        }
+        
+        b{
+            float: right;
+            font-weight: normal;
+        }
+        
+        .ml_sysmsg{
+            color: $morange;
+        }
+    }
+}

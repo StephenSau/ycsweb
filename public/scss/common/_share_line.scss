@@ -1,0 +1,21 @@
+.content{
+    .ob_shareline{
+        font-size: 12px;
+        text-align: right;
+        color: $mgray;
+        margin:-46px 0 34px 0;
+        span{
+            margin-right: 5px;
+            line-height: 17px;
+            display: inline-block;
+            height: 17px;
+        }
+
+        a{
+            float: none;
+            display: inline-block;
+            margin:  0 0 3px 0;
+            vertical-align: middle;
+        }
+    }
+}

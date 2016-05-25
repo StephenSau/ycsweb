@@ -1,0 +1,258 @@
+@import 'variable';
+@import 'maxin';
+.order_progressbar {
+    @include box-center(1000px);
+    padding: 64px 0 73px;
+    position: relative;
+    z-index: 1;
+    li {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .op_step_01 {
+        left: 0;
+    }
+    .op_step_02 {
+        left: 25%;
+    }
+    .op_step_03 {
+        left: 50%;
+    }
+    .op_step_04 {
+        left: 75%;
+    }
+    .op_step_05 {
+        left: 100%;
+    }
+    
+    em{
+        color: $mgray;
+    }
+}
+
+.op_text .op_step_01 em{
+    color: #73a80d;
+}
+
+.op_container {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+
+.op_background li,
+.op_step_box li {
+    background-image: url('../img/bigIcon.png');
+}
+
+.op_background li {
+    background-position: -120px -320px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: -13px 0 0 -20px;
+}
+
+.op_background {
+    height: 14px;
+    background-color: #dddddd;
+}
+
+.op_bar {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 15;
+    height: 6px;
+    width: 25%;
+    background-color: #73a80d;
+}
+
+.op_step_box li {
+    background-position: -160px -320px;
+    z-index: 20;
+    width: 30px;
+    height: 30px;
+    margin: -8px 0 0 -15px;
+    text-align: center;
+    line-height: 30px;
+    font-family: $ffn;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    &.op_step_01{
+        background-position: -190px -320px;
+    }
+}
+
+
+.op_text li {
+    top: 25px;
+    z-index: 30;
+}
+
+.op_text em,
+.op_text i {
+    display: block;
+    width: 7em;
+    text-align: center;
+    margin-left: -3.5em;
+}
+
+.op_text em {
+    font-family: $ffa;
+}
+
+.op_text i {
+    font-family: $ffn;
+    margin-top: 60px;
+}
+
+
+.order_status{
+    border: 1px solid $linegray;
+    margin-bottom: 30px;
+    .os_done{
+        color: $mgreen;
+    }
+    .os_warning{
+        color: $mred;
+    }
+}
+
+.os_overview{
+    padding: 24px 28px 22px;
+    font-size: 16px;
+    font-family: $ffa;
+    font-weight: bold;
+    color: $dgray;
+    span{
+        margin-right: 10px;
+    }
+    em{
+        color: $morange;
+    }
+}
+
+.os_remark{
+    background-color: #f7f7f7;
+    vertical-align: middle;
+    text-align: center;
+    height: 88px;
+    line-height: 88px;
+    width: 100%;
+    font-size: 16px;
+    font-family: $ffa;
+    color: $mgreen;
+    i{
+    	display: inline-block;
+    	@include sIconSprite(24, 28px, 28px);
+    	vertical-align: text-bottom;
+    	margin-right: 10px;
+    }
+}
+
+
+.order_detail{
+    h2{
+        padding-bottom: 9px;
+        font-size: 16px;
+        font-family: $ffa;
+        color: $lblue;
+        border-bottom: 4px solid $lblue;
+    }
+    
+}
+
+.od_box{
+    border: 1px solid $linegray;
+    border-top: none;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.two_dim_code_box{
+	float: right;
+	width: 210px;
+	margin: 30px 30px 0 0;
+}
+
+
+.od_info{
+    font-size: 12px;
+    padding: 0 28px;
+    color: $mgray;
+    width: 860px;
+    float: left;
+    h3{
+        color: $dgray;
+        font-family: $ffa;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+    
+    h4{
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    >li{
+        border-top: 1px dashed $linegray;
+        padding: 29px 0;
+        &:first-child{
+            border-top: none;
+        }
+        
+        a{
+            color: $lblue;
+        }
+        
+        dt{
+            float: left;
+            width: 5em;
+             margin-bottom: 10px;
+        }
+        dd{
+            margin-bottom: 10px;
+        }
+        .odi_nofloat{
+            float: none;
+        } 
+    }
+}
+
+
+.order_payline{
+    padding: 0 20px;
+    color: $lgray;
+    div.active{
+        display: block;
+    }
+    p{
+        &.active{
+            display: block;
+        }
+        text-align: right;
+    }
+    .btn{
+        display: inline-block;
+    }
+    
+    b{
+        font-family: 18px;
+        font-family: $ffa;
+        color: $mgray;
+        display: inline-block;
+        width: 125px;
+    }
+    
+    em{
+        display: inline-block;
+        min-width: 125px;
+        font-family: $ffa;
+        font-size: 24px;
+        color: $mred;
+    }
+}

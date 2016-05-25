@@ -1,0 +1,79 @@
+@import 'variable';
+@import 'maxin';
+
+.search_box{
+    border: 1px solid #dddddd;
+    margin-bottom: 40px;
+    li{
+        padding: 15px 0 15px 86px;
+        position: relative;
+        margin: 0 20px;
+        border-top: 1px dashed #dddddd;
+        overflow: hidden;
+        &:first-child{
+            border-top: none;
+        }
+        &.sb_submitline{
+            border-top: none;
+            margin: 0;
+            padding: 15px 27px 15px 0;
+            text-align: right;
+            background-color: #f7f7f7;
+            margin-top:-1px;
+            .btn{
+                color: #ffffff;
+                display: inline-block;
+                width: 140px;
+            }
+        }
+    }
+    
+    .sb_province{
+        width: 140px;
+        margin-right: 5px;
+    }
+    
+    .sb_city{
+        width: 180px;
+        margin-right: 5px;
+    }
+    
+    .sb_district{
+        width: 140px;
+    }
+    
+    select{
+        height: 24px;
+    }
+    
+    p{
+        line-height: 24px;
+        color: $mgray;
+    }
+    
+    label{
+        position: absolute;
+        font-family: $ffa;
+        color: $mgray;
+        font-weight: bold;
+        top: 19px;
+        left: 0;
+    }
+    
+    a{
+        font-size: 12px;
+        display: inline-block;
+        color: $mgray;
+        text-decoration: none;
+        margin-right: 25px;
+        &:hover{
+            color: $lblue;
+        }
+        &.active{
+            color: #d1370d;
+            font-weight: bold
+        }
+    }
+    
+    
+}

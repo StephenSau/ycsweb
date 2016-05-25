@@ -1,0 +1,210 @@
+@import 'variable';
+@import 'maxin';
+
+body{
+    background-color: #f7f7f7;
+}
+
+.login_box{
+    @include box-center(1100px);
+    
+    .lb_tab{
+        border-bottom: 4px solid $linegray;
+        margin-bottom: 30px;
+        margin-left: 73px;
+        width: 301px;
+        li{
+            float: left;
+            padding-bottom: 8px;
+            border-bottom: 4px solid $linegray;
+            margin-bottom: -4px;
+            &:first-child a{
+                border-left: none;
+            }
+            
+            &.active{
+                border-bottom: 4px solid $morange;
+                a{
+                    color: $morange;
+                }
+            }
+        }
+        
+        a{
+            font-size: 18px;
+            font-family: $ffa;
+            display: block;
+            width: 150px;
+            text-align: center;
+            border-left: 1px solid $linegray;
+            color: $lgray;
+        }
+    }
+    ol{
+        margin-left: 40px;
+    }
+    
+    input{
+        vertical-align: middle;
+    }
+    
+    li{
+        margin-bottom: 20px;
+    }
+    
+    .lb_title{
+        width: 4em;
+        text-align: right;
+    }
+    
+    label{
+        font-family: $ffa;
+        font-size: 16px;
+        color: $mgray;
+        margin-right: 5px;
+        display: inline-block;
+        
+    }
+    
+    .lb_text{
+        padding: 0 5px;
+        width: 208px;
+        height: 34px;
+        line-height: 34px;
+        border: 1px solid #dddddd;
+    }
+    
+    .lb_find{
+        color: $lgray;
+        font-size: 12px;
+    }
+    
+    .lb_rememberline{
+        padding-left: 72px;
+        input{
+            vertical-align: middle;
+        }
+        label{
+            font-size:14px;
+        }
+    }
+
+    .lb_phoneCodeLine{
+        .lb_text{
+            width: 87px;
+        }
+        a{
+            font-size: 12px;
+            color: $mgray;
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            width: 120px;
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid $linegray;
+            border-left: none;
+            background-color: #f7f7f7;
+        }
+    }
+    
+    .lb_btnline{
+        margin-bottom: 20px;
+        padding-left: 75px;
+        button{
+            width: 220px;
+        }
+    }
+
+    .lb_imgCodeLine{
+        .lb_text{
+            width: 100px;
+        }
+        img{
+            cursor: pointer;
+            vertical-align: middle;
+        }
+    }
+}
+
+.lb_telphoneLine, .lb_phoneCodeLine, .lb_imgCodeLine, .lb_imgCodeBtnLine{
+    display: none;
+}
+
+
+.lb_leftside{
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid $linegray;
+    padding-top: 38px;
+    height: 370px;
+    width: 448px;
+}
+
+.lb_rightside{
+    float: right;
+    width: 650px;
+    height: 410px;
+}
+
+.lb_registerline{
+    color: $lgray;
+    font-size: 14px;
+    padding-left: 156px;
+    margin-bottom: 20px;
+    a{
+        color:$lorange;
+        &:hover{
+            color:$lorange;
+        }
+    }
+}
+
+.lb_partnerLoginLine{
+    padding-top: 20px;
+    font-size: 12px;
+    color: $lgray;
+    text-align: center;
+    border-top: 1px dashed $linegray;
+    a{
+        color: $mgreen;
+        width: 108px;
+        height: 26px;
+        line-height: 26px;
+        border: 1px solid $linegray;
+        text-align: center;
+        display: inline-block;
+        .icon{
+            display: inline-block;
+            margin-right: 5px;
+            @include sIconSprite(27, 22px, 18px);
+            vertical-align: middle;
+        }
+    }
+}
+
+*+html .login_box{
+    label{
+        margin-right: 0;
+    }
+}
+
+.wxLoginBox{
+    width: 300px;
+    background: url('../img/loading.gif') 50% 50% no-repeat;
+}
+
+.loadingBox{
+    padding: 5px 100px;
+    text-align: center;
+    img{
+        margin-bottom: 20px;
+    }
+    p{
+        color: $mgray;
+        font-size: 18px;
+        font-family: $ffa;
+    }
+}
+
+

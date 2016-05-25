@@ -1,0 +1,28 @@
+@import 'variable';
+@import 'maxin';
+
+.service{
+	h2{
+		@include title;
+	}
+	h3{
+		color: $mgray;
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	p{
+		overflow: hidden;
+		margin-bottom: 30px;
+		a{
+			color: $mgray;
+			float: left;
+			width: 100px;
+			margin:0 20px 10px 0 ;
+			@include ellipsis;
+			
+			&:hover{
+				color: $lblue;
+			}
+		}
+	}
+}

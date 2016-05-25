@@ -1,0 +1,59 @@
+@import "variable";
+@import "maxin";
+
+.tab_position{
+    height: 35px;
+}
+.tab{
+    overflow: hidden;
+    border-bottom: 2px solid #1153a7;
+    li{
+        float:left;
+        &.active a{
+            background-color: #1153a7;
+            color: #ffffff;
+            &:hover{
+                background-color: #1153a7;
+                color: #ffffff;  
+            }
+        }
+    }
+    
+    a{
+        display: block;
+        padding: 10px 22px 7px;
+        color: #1153a7;
+        font-family: $ffa;
+        font-size: 16px;
+        &:hover{
+            background-color: #f7f7f7;
+        }
+        &.special{
+            color: #eb9000;
+        }
+        
+    }
+    
+    .tab_link{
+        color: $morange;
+        &:hover{
+            color: $morange;
+        }
+    }
+    
+}
+
+.affix{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #1153a7;
+    background-color: #ffffff;
+    width: 100%;
+    .tab{
+        width: 1200px;
+        @include box-center;
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,44 @@
+@import "variable";
+@import "maxin";
+
+.not_found_box{
+    font-family: $ffa;
+    border: 1px solid $linegray;
+    padding: 100px 0;
+    background-color: #ffffff;
+    p{
+        text-align: center;
+        color: $mgray;
+        margin-bottom: 10px;
+    }
+    
+    strong{
+        color: #eb9000;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .icon_Line{
+        margin-bottom: 40px;
+    }
+    
+    .text{
+        margin-bottom: 75px;
+    }
+    
+    .btn{
+        display: inline-block;
+        width: 120px;
+        margin: 0 10px;
+    }
+    
+    .icon_warning{
+        @include bIconSprite(11, 107px, 103px);
+        display: inline-block;
+    }
+    
+    .icon_error{
+        @include bIconSprite(12, 147px, 82px);
+        display: inline-block;
+    }
+}

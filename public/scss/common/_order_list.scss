@@ -1,0 +1,99 @@
+@import 'variable';
+@import 'maxin';
+
+.ol_tab{
+    border-bottom: 4px solid $linegray;
+    margin-bottom: 20px;
+    li{
+        float: left;
+        padding-bottom: 13px;
+        border-bottom: 4px solid $linegray;
+        margin-bottom: -4px;
+        &:first-child a{
+            border-left: none;
+        }
+        
+        &.active{
+            border-bottom: 4px solid $morange;
+            a{
+                color: $morange;
+            }
+        }
+    }
+    
+    a{
+        font-size: 16px;
+        font-family: $ffa;
+        display: block;
+        padding: 0 28px;
+        border-left: 1px solid $linegray;
+        color: $mgray;
+        font-weight: bold;
+    }
+}
+
+table{
+    a{
+        color: $lblue;
+    }
+}
+
+
+.ol_table{
+    display: none;
+    width: 100%;
+    border: 1px solid $linegray;
+    margin-bottom: 30px;
+    th,td{
+        text-align: center;
+    }
+    
+    th{
+        padding: 8px 0 9px;
+        background-color: #eef2f6;
+    }
+    tr td:first-child{
+        border-left: none;
+    }
+    
+    td{
+        padding: 25px 0;
+        border-top: 1px solid #eef2f6;
+        border-left: 1px solid #eef2f6;
+        vertical-align: middle;
+        line-height: 18px;
+    }
+    
+    .btn{
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        margin-bottom: 5px;
+        width: 6em;
+        font-family: $fft;
+        font-weight: normal;
+    }
+    .olt_money{
+        color: #db281f;
+        font-family: $ffa;
+    }
+    .olt_status{
+        line-height: 18px;
+    }
+}
+
+.ol_nodata_line{
+    display: none;
+    text-align: center;
+    color: #dddddd;
+    font-family: $ffa;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    .icon{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+        @include bIconSprite(9, 50px, 50px);
+    }
+}

@@ -1,0 +1,24 @@
+@import 'variable';
+@import 'maxin';
+
+
+.firendlink_box{
+    overflow: hidden;
+    padding-bottom: 32px;
+    h3{
+        @include title;
+    }
+    
+    p{
+        margin-top: -9px;
+        line-height: 30px;
+    }
+    
+    a{
+        text-decoration: none;
+        font-size: 12px;
+        color: $mgray;
+        word-break: keep-all;
+        
+    }
+}

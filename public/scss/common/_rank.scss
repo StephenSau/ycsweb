@@ -1,0 +1,108 @@
+@import 'variable';
+@import 'maxin';
+
+
+
+.rank_box{
+    margin-bottom: 30px;
+    position: relative;
+    h3{
+        font-size: 16px;
+        font-family: $ffa;
+        color: #1153a7;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #1153a7;
+    }
+    
+    ul{
+        background-color: #f7f7f7;
+        border: 1px solid $linegray;
+        border-top: none;
+        
+        >li{
+            float: left;
+            padding: 7px 0 6px;
+            border-left: 1px solid #f7f7f7;
+            border-right: 1px solid #f7f7f7;
+            border-bottom: 1px solid $linegray;
+            margin-bottom: -1px;
+            a{
+                color: $mgray;
+                display: block;
+                width: 67px;
+                text-align: center;
+                border-right: 1px solid $linegray;
+            }
+        }
+    }
+    .rb_tab_01{
+        border-left: none;
+    }
+    
+    .rb_tab_03 {
+        border-right: none;
+        a{
+           border-right: none; 
+        }
+    }
+    
+    li.active{
+        background-color: #ffffff;
+        border-color: $linegray;
+        border-bottom-color: #ffffff;
+        a{
+            font-weight: bold;
+            color: $lblue;
+            border-color: #ffffff;
+        }
+    }
+    
+    .prev{
+        a{
+            border-color: #f7f7f7;
+        }
+    }
+    
+    .rank_contents{
+        border: 1px solid $linegray;
+        border-top: none;
+    }
+    
+    ol{
+        display: none;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 18px 9px 0 7px;
+        zoom: 1;
+        &.active{
+            display: block;
+        }
+        >li{
+            padding: 0 0 13px 20px;
+            
+            a{
+                color: $dgray;
+            }
+            span{
+                display: block;
+                text-indent: 2px;
+                color: $lgray;
+            }
+            i{
+                margin-left: -20px;
+                background-color: $mgreen;
+                color: #ffffff;
+                display: inline-block;
+                height: 14px;
+                width: 14px;
+                text-indent: 0;
+                line-height: 14px;
+                border-radius: 3px;
+                text-align: center;
+                &.rb_top3{
+                    background-color: $morange;
+                }
+            }
+        }
+    }
+}

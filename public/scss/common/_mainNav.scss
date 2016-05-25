@@ -1,0 +1,104 @@
+@import 'variable';
+@import 'maxin';
+
+
+.nav{
+    background-color: $lblue;
+    margin-bottom: 40px;
+    
+    .n_container{
+        @include box-center;
+        overflow: hidden;
+    }
+    
+    .n_logo{
+        float: left;
+        margin: 18px 45px 0 0;
+    }
+    
+    li{
+        float: left;
+        a{
+            float: left;
+            
+            font-size: 18px;
+            color: #cde8ff;
+            font-family: $ffa;
+            text-decoration: none;
+            padding: 22px 25px;
+            &.active{
+                background-color: #004193;
+                color: #f9df00;
+            }
+        }  
+    }
+    
+    .search_line{
+        float: right;
+        overflow: hidden;
+        position: relative;
+        margin-top: 16px;
+        z-index: 1;
+        label{
+            display: inline-block;
+            text-indent: -1000em;
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            @include sIconSprite(4);
+        }
+        
+        input{
+            border: none;
+            display: inline-block;
+            background-color: #2b65b0;
+            border-radius: 6px;
+            line-height: 36px;
+            color: #ffffff;
+            height: 36px;
+            width: 255px;
+            font-size: $mfs;
+            padding: 0 5px 0 40px;
+        }
+    }
+    
+    .search_box{
+        padding: 12px 345px 12px 0;
+        float: right;
+        label{
+            font-size: 18px;
+            color: #ffffff;
+            font-family: $ffa;
+            margin-right: 5px;
+        }
+        
+        input{
+            border: none;
+            display: inline-block;
+            background-color: #ffffff;
+            border-radius: 6px 0 0 6px;
+            line-height: 36px;
+            color: $mgray;
+            height: 36px;
+            width: 390px;
+            font-size: $mfs;
+            padding: 0 5px 0 10px;
+            vertical-align: middle;
+        }
+        
+        button{
+            height: 36px;
+            padding: 0 15px;
+            vertical-align: middle;
+            border: none;
+            width: 50px;
+            border-radius: 0 6px 6px 0;
+            background-color: #eb9000;
+            text-align: center;
+            .icon{
+                display: block;
+                @include sIconSprite(19);
+            }
+        }
+    }
+}

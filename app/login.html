@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录-一站式财税服务平台-壹财税</title>
+    <meta name="keywords" content="壹财税，财税服务，工商注册，代理记账，财税服务平台，财税网站，财税专家，财税咨询，节税，税务筹划" />
+    <meta name="description" content="壹财税是一家专注于为企业提供一站式财税服务的 O2O 互联网公司，整合会计师事务所、税务师事务所、律师事务所及工商代理公司资源 ，为用户提供高性价比、高附加值、省心省力、极致体验的一站式财税服务。" />
+    <link type="text/css" rel="stylesheet" href="../public/css/login.css" />
+    <script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?7f22c04f525c4961b0b57297567c105d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-67999660-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+   <!-- header model start-->
+    <div class="header">
+        <div class="h_container">
+            <ul class="h_leftside">
+                <li><a href="javascript:window.location.replace('/app/register.html')" class="line">注册</a></li>
+                <li class="h_noline" href="javascript:;"><a>登录</a></li>
+            </ul>
+            <ul class="h_rightside">
+                <li class="line"><a href="/">壹财税首页</a></li>    
+                <li class="line"><a id="qqTalk_header_btn_01" href="javascript:void(0);">在线客服</a></li>
+                <li class="h_hassub">
+                    <a href="javascript:;" id="h_showCodeBox">
+                        <span class="icon_weixin"></span>
+                    </a>
+                    <!--del weibo position-->
+                    <div class="h_two_code_box" id="h_codeBox">
+                        <p class="htcb_photeline">
+                            <span>
+                                <img src="../public/img/tdc_01.png" alt="" width="110" height="110">
+                                <em>官方微信订阅号</em>
+                            </span>
+                            <span>
+                                <img src="../public/img/tdc_02.png" alt="" width="110" height="110">
+                                <em>官方微信服务号</em>
+                            </span>
+                        </p>
+                        <p class="htcb_readme">专业财税资讯、优质财税服务，财税疑问在线解答，壹财税微信号帮到您</p>
+                    </div>
+                </li>
+                <li class="h_hassub h_noline">
+                    <a href="javascript:;" id="h_showMap">
+                        <i class="icon_nav"></i>网站地图<i class="icon_arrow"></i>
+                    </a>
+                    <ul class="h_subbox" id="h_map">
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/fuwu">财税服务</a></li>
+                        <li class="h_noline"><a href="/zixun">资讯</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header model end-->
+    <!-- navigation model start-->
+    <div class="nav">
+       <div class="n_container">
+           <h2 class="n_logo">
+                <a href="/" title="壹财税-一站式财税服务平台">
+                    <img src="../public/img/logo.png" width="230" height="30" alt="壹财税-一站式财税服务平台">
+                </a>
+            </h2>
+            <ul >
+                <li><a href="/">首页</a></li>
+                <li><a href="/fuwu">财税服务</a></li>
+                <li><a href="/zixun">资讯</a></li>
+            </ul>
+            <div class="search_line">
+                <form action="/article/SearchArticleList.htm" id="articleSearchForm" target="_blank" method="get">
+                    <label for="headerSearch">搜索</label>
+                    <input name="querycondition" id="headerSearch" type="text" maxlength="20" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- navigation model end-->
+    
+    <!-- login model start-->
+    <div class="content login_box clearfix">
+        <div class="lb_leftside">
+            <ul class="lb_tab clearfix" id="lb_tab">
+                <li data-role="item" data-target="common" class="active"><a href="javascript:;">普通登录</a></li>
+                <li data-role="item" data-target="telphone"><a href="javascript:;">手机验证登录</a></li>
+            </ul>
+            <form action="/user/login" name="loginform" id="login_form">
+                <ol>
+                    <li id="lb_nameLine">
+                        <label class="lb_title" for="l_name">用户名</label>
+                        <input class="lb_text" type="text" id="l_name" name="username" tabindex="1" maxlength="20" />
+                    </li>
+                    <li id="lb_passwordLine">
+                        <label class="lb_title" for="l_password">密码</label>
+                        <input class="lb_text" type="password" id="l_password" name="password" tabindex="2" maxlength="20" />
+                        <a class="lb_find" href="javascript:document.getElementById('qqTalk_header_btn_01').click();" id="lb_forget">找回密码</a>
+                    </li>
+                    <li id="lb_telphoneLine" class="lb_telphoneLine">
+                        <label class="lb_title" for="l_telphone">手机号码</label>
+                        <input class="lb_text" type="text" id="l_telphone" name="telphone" tabindex="3" maxlength="11" />
+                    </li>
+                    <li id="lb_phoneCodeLine" class="lb_phoneCodeLine">
+                        <label class="lb_title" for="l_telCode">验证码</label>
+                        <input class="lb_text" type="text" id="l_telCode" name="telCode" tabindex="4" maxlength="4" /><a href="javascript:;" id="lb_getPhoneCode">获取手机验证码</a>
+                    </li>
+                    <li id="lb_rememberLine" class="lb_rememberline">
+                        <input checked="checked" type="checkbox" name="rememberme" id="l_remember" tabindex="3"><label for="l_remember">记住我</label>   
+                    </li>
+                    <li id="lb_imgCodeLine" class="lb_imgCodeLine">
+                        <label class="lb_title" for="l_imgCode">图片验证</label>
+                        <input class="lb_text" type="text" id="l_imgCode" name="imgCode" tabindex="5" maxlength="4" />
+                        <img src="/vc.htm" id="lb_imgCode" width="100" height="36" />
+                        <a class="lb_find" href="javascript:;" id="lb_changeImgCode">换一换</a>
+                    </li>
+                    <li class="lb_btnline">
+                        <button type="submit" id="lb_submitBtn" class="btn btn_warning">登录</button>
+                    </li>
+                </ol>
+            </form>
+            <p class="lb_registerline">还没注册？<a href="javascript:window.location.replace('/app/register.html')">免费注册</a></p>
+            <p class="lb_partnerLoginLine">
+                合作网站账号登录：<a href="javascript:;" id="lb_wxLogin"><i class="icon"></i>微信登录</a> 
+            </p>
+        </div>
+        <div class="lb_rightside">
+            <img src="../public/img/login_ad.jpg" alt="" width="650" height="410">
+        </div>
+    </div>
+    <!-- login model end-->
+    <!--footer model start-->
+    <div class="footer">
+        <p class="f_readme">除特别注明外，作品版权归壹财税所有。如果无意之中侵犯了您的权益，请来信告知，本站将在三个工作日内做出处理</p>
+        <p class="f_map">
+            <a href="/about" title="关于我们" target="_blank">关于我们</a> |
+            <a href="/team" title="团队介绍" target="_blank">团队介绍</a> |
+            <a href="/recruit" title="人才招聘" target="_blank">人才招聘</a> |
+            <a href="/milestone" title="大事记" target="_blank">大事记</a> |
+            <a href="/contact" title="联系我们" target="_blank">联系我们</a> |
+            <a href="/aptitude" title="资质文件" target="_blank">资质文件</a> |
+            <a href="/disclaim" title="免责申明" target="_blank">免责申明</a> |
+            <a href="/fuwu/all" title="全部服务" target="_blank">全部服务</a> |
+            <a href="/zixun/787.html" title="服务商进驻" target="_blank">服务商进驻</a> |
+            <a href="/help" title="帮助中心" target="_blank">帮助中心</a>
+        </p>
+        <p class="f_safe">
+            <a target="_blank" rel="nofollow" id="_pingansec_bottomimagesmall_shiming" href="http://si.trustutn.org/info?sn=554150906015506542095"><img src="http://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+        </p>
+        <p class="f_copyright">壹财税 版权所有 Copyright © 2015 www.1caishui.com All Rights Reserved   粤ICP备15017127号-1</p>
+    </div>
+    <!--footer model end-->
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=49998824" charset="UTF-8"></script>
+    <script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+    <script type="text/javascript" src="../public/js/vendor/require.js"></script>
+    <script type="text/javascript" src="../public/js/config.js"></script>
+    <script type="text/javascript" src="../public/js/login.js"></script>  
+</body>
+</html>

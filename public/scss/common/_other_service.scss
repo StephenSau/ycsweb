@@ -1,0 +1,44 @@
+@import "variable";
+@import "maxin";
+
+
+
+.other_service_box{
+    display: none;
+    margin-bottom: 30px;
+    h3{
+        @include title(0);
+    }
+    
+    li{
+        padding: 20px 0 23px 70px;
+        border-bottom: 1px dashed #dddddd;
+        position: relative;
+    }
+    
+    img{
+        position: absolute;
+        left: 0;
+        top: 23px;
+    }
+    
+    h4{
+        font-weight: bold;
+        font-family: $ffa;
+        
+        margin-bottom: 7px;
+        a{
+            color: $mgray;
+            &:hover{
+                color: $lblue;
+            }
+        }
+    }
+    .ost_intro{
+        color: $lgray;
+        line-height: 17px;
+        font-size: 12px;
+        height: 34px;
+        overflow: hidden;
+    }
+}
